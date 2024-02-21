@@ -733,12 +733,10 @@ padding: 0;
   margin: 0.75rem; /* Increased spacing */
 }
 
-
 .logo-branding img {
   margin: 0.9rem; /* Increased spacing */
   width: 25%; /* Ensure responsiveness */
   height: auto;
-  margin: 0.9rem; /* Increased spacing */
 }
 
 /* Modal CSS */
@@ -747,9 +745,7 @@ padding: 0;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
+  padding-top: 5rem; /* Location of the box */
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
@@ -761,9 +757,7 @@ padding: 0;
 .modal-content {
   margin: auto;
   display: block;
-  width: 72%;
-  max-width: 600px;
-  max-height: 50vh;
+  max-width: 63%;
   align-items: center;
 }
 
@@ -782,17 +776,17 @@ padding: 0;
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
+  top: 12px;
+  right: 40px;
+  color: #ffffff;
   font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight:500;
+  transition: 0.5s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #e0e0e0;
   text-decoration: none;
   cursor: pointer;
 }
