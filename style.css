@@ -671,7 +671,7 @@ transition: transform 0.5s ease;
   background: #3761b6 !important; /* Adjusted color for a softer look */
 }
 
-.branding-menu ul a {
+.branding-menu ul button {
   text-decoration: none;
   padding: 12px 15px;
   color: #333; /* Darker for better readability */
@@ -691,13 +691,13 @@ margin: 0;
 padding: 0;
 }
 
-.branding-menu a.active {
+.branding-menu button.active {
   color: #fff !important;
   background: #3761b6 !important; /* Adjusted color for a softer look */
   box-shadow: 3px 3px 6px #b0b0b0;
 }
 
-.branding-menu a:hover {
+.branding-menu button:hover {
   color: #fff;
   background: #5a7dbc; /* Adjusted color for a softer look */
   box-shadow: 3px 3px 6px #b0b0b0;
@@ -761,8 +761,8 @@ padding: 0;
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  width: 72%;
+  max-width: 600px;
 }
 
 /* Caption of Modal Image */
