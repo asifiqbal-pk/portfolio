@@ -410,6 +410,11 @@
                     </div>
                 </div>
 </div></div></div>
+<!-- Modal for displaying the clicked image -->
+<div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+</div>
 
 <!-- JavaScripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -418,5 +423,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="script.js"></script>
+<script>
+     // Modal functionality
+     var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+
+    document.querySelectorAll('.carousel-image').forEach(item => {
+        item.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+    });
+
+    // Close the modal
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+</script>
+
 </body>
 </html>
