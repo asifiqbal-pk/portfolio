@@ -90,14 +90,13 @@
 #main-heading {
   text-align: center;
   color: #3761b6;
-  font-size:1.7em;
+  font-size:1.8em;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.2rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 3rem;
   margin-left: 21%;
-  margin-top: 1rem;
-  padding-top: 12px;
+  padding-top: 60px;
 }
 
 #main-content {
@@ -470,6 +469,11 @@ nav.vertical-nav ul {
      PORTFOLIO BLOCK CSS
 ================================================*/
 
+#main-content {
+  margin-left: 21%;
+  padding: 0 12px;
+}
+
 .static-content {
   flex-grow: 1;
   height: auto; /* Adjust based on your layout */
@@ -699,7 +703,6 @@ padding: 0;
   box-shadow: 3px 3px 6px #fff;
 }
 
-
 .tab-content img {
   max-width: 63%; /* Ensure responsiveness */
   max-height: 50vh; /* Maintain aspect ratio */
@@ -707,6 +710,37 @@ padding: 0;
   box-shadow: 1px 1px 3px #f1f1f1;
   border-radius: 4px;
 }
+
+.portfolio-branding {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+}
+
+.portfolio-branding img {
+  width: 50%; /* Ensure responsiveness */
+  max-height: 70vh; /* Maintain aspect ratio */
+  margin: 1rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
+}
+
+.marketing-branding {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
+}
+
+.marketing-branding img {
+  max-width: 40%; /* Ensure responsiveness */
+  max-height: 40vh; /* Maintain aspect ratio */
+  margin: 0.75rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
+}
+
 .branding-box {
   overflow-x: auto;
   display: flex;
@@ -734,6 +768,7 @@ padding: 0;
   margin: 0.9rem; /* Increased spacing */
   width: 19%; /* Ensure responsiveness */
   height: auto;
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 /* Modal CSS */
