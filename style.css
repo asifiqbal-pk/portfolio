@@ -763,6 +763,7 @@ padding: 0;
   display: block;
   width: 72%;
   max-width: 600px;
+  max-height: 50vh;
   align-items: center;
 }
 
