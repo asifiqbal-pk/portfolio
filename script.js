@@ -62,6 +62,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// Functionality for Branding Portfolio 
+$(document).ready(function() {
+    $('a[data-bs-toggle="tab"]').on('click', function(e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+  });
+
+
 // Modal Functionality for Portfolio Images
 $(document).ready(function(){
     // Select all images within the portfolio-wrapper class and add click event
