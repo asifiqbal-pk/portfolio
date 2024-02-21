@@ -1,0 +1,153 @@
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 50px; /* Minimized width on small screens */
+  }
+
+  .sidebar.active {
+      width: 300px; /* Expand when active */
+  }
+
+  #toggle-button {
+      display: block; /* Show toggle button on small screens */
+  }
+
+  #sidebar-content {
+      display: none; /* Hide content by default on small screens */
+  }
+
+  .sidebar.active #sidebar-content {
+      display: block; /* Show content when sidebar is active */
+  }
+
+  .sidebar img {
+    width: 40%; /* Adjust image size */
+    margin: 10px 10%; /* Center the image */
+    border: 2px solid #fff;
+    border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
+    margin-bottom: 1.5rem;
+  }
+
+  .sidebar h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .sidebar p {
+    font-size: 0.8em; font-weight: 300; line-height: 1.3em;
+  }
+
+  #main-content {
+      margin-left: 40px; /* Adjust for minimized sidebar */
+      margin-right: 0px; /* Adjust for minimized sidebar */
+      padding-left: 1.5rem;
+      padding-right: 0;
+  }
+
+  #main-heading {
+      margin-left: 50px; /* Adjust for minimized sidebar */
+      font-size: 1.3em;
+  }
+  .container {
+      display: block;
+      flex-basis: 100%; /* Stack columns vertically on small screens */
+      font-size: 0.9em;
+      padding: 0;
+      margin: 0;
+  }
+  .container .skills-box {
+          width: 72%;
+          margin-bottom: 1.5rem;
+          margin-left: 2rem;
+          height: auto;
+          padding: 2rem;
+  }
+  .container .about-box {
+      display:inline-block;
+      width: 45%;
+      height: auto;
+      margin-bottom: 1rem;
+  }
+
+  .left-column {
+      flex-basis: 100%; /* Stack columns vertically on small screens */
+      padding-left: 1rem;
+  }
+  .right-column {
+      flex-basis: 100%; /* Stack columns vertically on small screens */
+      padding: 0;
+      margin-top: 2rem;
+      padding-left: 1rem;
+      padding-right: 0.5rem;
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+      display: none;} /* Hide content by default on small screens */
+  .owl-carousel .owl-nav .owl-next {
+      display:none} /* Hide content by default on small screens */
+  
+  .owl-carousel .owl-nav .owl-dot {
+    display: block;}
+
+
+    /*Portfolio SECTION*/
+  
+  .portfolio-nav {
+    width: 100%; /* Use 100% width to fill the container */
+    background-color: #e1eaff;
+    padding: 0;
+    margin: 0;
+  }
+
+  .portfolio-nav ul {
+    display: flex;
+    flex-direction: row; /* Adjust if needed to make sure it's in line */
+    justify-content: center; /* Center the navigation items */
+    flex-wrap: wrap; /* Allows items to wrap in small screens */
+    align-content: center;
+  }
+
+  .portfolio-nav li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .portfolio-nav li a {
+    display: inline-flex;
+  /*  flex-direction: column; /* Stack the icon and text vertically */
+    flex-wrap: wrap;
+    align-items: center; /* Center items horizontally in the flex container */
+    justify-content: center; /* Center items vertically in the flex container */
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: #000000;
+    min-width: 8rem;
+    padding: 10px;
+    background:#ffffff;
+    border-radius: 5px;
+    border: solid #e1eaff 2px;
+    box-shadow: 5px 5px 5px #a0bffd ;
+    transition: all 0.5s ease;
+  }
+
+  .portfolio-nav a:hover{ 
+    color: #3665c2;
+    background:#fff;
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 1), 5px 5px 5px #a0bffd ;
+    transform: translateY(-3px);
+    transition: transform 0.5s ease;
+    border: solid 2px  #366ad1 ; 
+  }
+
+  .portfolio-nav i {
+    font-size: 17px;
+    padding:0.2rem;
+    margin-right: 0.3rem;
+  }  
+}
