@@ -7,7 +7,7 @@
   }
 
   .sidebar.active {
-      width: 300px; /* Expand when active */
+      width: 313px; /* Expand when active */
   }
 
   #toggle-button {
@@ -23,11 +23,11 @@
   }
 
   .sidebar img {
-    width: 40%; /* Adjust image size */
+    width: 30%; /* Adjust image size */
     margin: 10px 10%; /* Center the image */
     border: 2px solid #fff;
     border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .sidebar h3 {
