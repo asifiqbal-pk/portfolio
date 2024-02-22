@@ -155,7 +155,7 @@
 }
 
 .portfolio-nav li {
-  margin: 0.3rem;
+  margin: 0.2rem;
 }
 
 
@@ -163,7 +163,7 @@
   flex-direction: column; /* Stack the icon and text vertically */
   font-size: 10px;
   line-height: 1rem;
-  width: 3.5rem;
+  width: 3.4rem;
   min-height: 7vh;
   text-wrap: wrap;
   padding: 4px 0;
