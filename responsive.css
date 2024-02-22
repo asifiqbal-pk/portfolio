@@ -104,9 +104,9 @@
 
   }
   .skills-container .about-box {
-      display:inline-block;
-      width: 45%;
-      height: auto;
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
       margin-bottom: 1rem;
       padding: 0.3rem;
   }
