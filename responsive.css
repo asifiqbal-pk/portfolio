@@ -161,9 +161,9 @@
 
 .portfolio-nav li a {
   flex-direction: column; /* Stack the icon and text vertically */
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1rem;
-  width: 3.5rem;
+  width: 3.3rem;
   min-height: 7vh;
   text-wrap: wrap;
   padding: 4px 0;
