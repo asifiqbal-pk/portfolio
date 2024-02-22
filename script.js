@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Sidebar toggle functionality
+// Sidebar toggle functionality
     const toggleButton = document.getElementById('toggle-button');
     const sidebar = document.getElementById('sidebar');
     const contentArea = document.querySelector('body'); // Selecting the body as the area to listen for clicks
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
    
-    // Enhanced navigation handling for portfolio-specific sections
+// Enhanced navigation handling for portfolio-specific sections
     const portfolioLinks = document.querySelectorAll('.portfolio-nav ul li a');
 
     portfolioLinks.forEach(link => {
@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    
 // Initialize Owl Carousel
 var owl = $('.owl-carousel');
 owl.owlCarousel({
@@ -69,7 +70,7 @@ $(document).ready(function() {
       e.preventDefault();
       $(this).tab('show');
     });
-  });
+});
 
 
 // Modal Functionality for Portfolio Images
@@ -81,18 +82,19 @@ $(document).ready(function(){
         $('#imageModal').css('display', 'block'); // Display the modal
     });
 
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    // Get the <span> element that closes the modal using jQuery
+    var $span = $(".close").first(); // Assuming there's only one element with class "close"
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() { 
+    $span.on('click', function() { 
         $('#imageModal').css('display', 'none');
-    };
+    });
 
     // Also close the modal if the user clicks anywhere outside of the modal image
-    window.onclick = function(event) {
-        if (event.target == document.getElementById('imageModal')) {
+    $(window).on('click', function(event) {
+        if ($(event.target).is('#imageModal')) {
             $('#imageModal').css('display', 'none');
-        }
-    };
+             }
+        });
+    });
 });
