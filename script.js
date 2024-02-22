@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     $(document).ready(function() {
         // Sidebar toggle functionality
         const toggleButton = document.getElementById('toggle-button');
