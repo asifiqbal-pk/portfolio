@@ -197,17 +197,15 @@ nav.vertical-nav ul {
      ABOUT BLOCK CSS
 ================================================*/
 
-.about-box {
-    animation: slideInFromBottom 0.9s ease-out forwards;
-  }
-  
+.about-container {
+  padding: 3% 4% 0%;
+}
   .about-box {
     overflow: hidden;
     text-align:center;
     Border: solid 1px;
     border-color: #3761b6;
     border-radius: 11px;
-    width: 19%;
     display: inline-block;
     padding: 0.3rem;
     background:#f6f8fc;
@@ -218,7 +216,7 @@ nav.vertical-nav ul {
   }
   
   .about-box h5 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
     color:#3761b6;
     text-transform: uppercase;
@@ -227,7 +225,8 @@ nav.vertical-nav ul {
   }
   
   .about-box p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-weight: 500;
     text-align:center;
     line-height: 1.2rem;
   }
@@ -508,10 +507,9 @@ nav.vertical-nav ul {
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5rem;
   color: #000000;
-  min-width: 8rem;
   padding: 10px;
   background:#ffffff;
   border-radius: 5px;
@@ -556,9 +554,7 @@ nav.vertical-nav ul {
 }
 .content-section.active {
   display: block; /* Only display the active section */
-  align-items: center;
-  flex-wrap: wrap;
-
+  align-content: center;
 }
 
 .video {
@@ -574,8 +570,10 @@ nav.vertical-nav ul {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 92%;
+  height: 92%;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 .video:hover {
@@ -627,14 +625,13 @@ transition: transform 0.5s ease;
   padding: 7px 7px;
   text-decoration: none;
   border: none;
-  border-bottom: solid #366ad1 1px;
-  margin-bottom: 7px;
+  border-bottom: solid #366ad1 2px;
+  margin-bottom: 5px;
 }
 
 .btn-portfolio:hover{
   color: #fff;
   background-color: #3761b6;
-  text-align: right;
 }
 
  
