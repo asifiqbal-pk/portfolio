@@ -151,7 +151,7 @@
 /*-----------Portfolio SECTION----------*/
 
 .portfolio-nav ul {
-   padding: 0.5rem 0;
+   padding: 0.4rem 0;
 }
 
 .portfolio-nav li {
@@ -166,13 +166,13 @@
   width: 4rem;
   min-height: 8vh;
   text-wrap: wrap;
-  padding: 5px 0;
+  padding: 4px 0;
   text-align: center;
   line-height: 1.2;
 }
 
 .portfolio-nav i {
-  font-size: 13px;
+  font-size: 12px;
   margin-bottom: 0.4rem;
 }
 
