@@ -199,7 +199,7 @@
 ================================================*/
 
 .branding-content {
-  padding: 19px 12px;
+  padding: 15px 10px;
 }
 
 .branding-menu ul {
@@ -209,9 +209,9 @@
 .branding-menu ul a {
   font-size: 0.7em;
   font-weight: 300;
-  margin: 0.3rem;
-  width: 3.5rem;
-  padding: 0.3rem;
+  margin: 0.2rem;
+  width: 3rem;
+  padding: 0.2rem;
   text-align: center;
   text-wrap: wrap;
 }
