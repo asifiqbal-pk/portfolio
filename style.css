@@ -514,10 +514,10 @@ nav.vertical-nav ul {
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.5rem;
   color: #000000;
-  padding: 11px 12px;
+  padding: 9px 11px;
   background:#ffffff;
   border-radius: 5px;
   border: solid #e1eaff 2px;
@@ -535,7 +535,7 @@ nav.vertical-nav ul {
 }
 
 .portfolio-nav i {
-  font-size: 19px;
+  font-size: 17px;
   margin-right: 0.5rem;
 }
 
@@ -685,7 +685,7 @@ transition: transform 0.5s ease;
   font-size: 0.9em; /* Slightly larger */
   font-weight: 400; /* Lighter weight for a modern look */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
-  margin: 1rem;
+  margin: 0.7rem;
   margin-top: 0.1rem;
   }
 
@@ -881,3 +881,6 @@ padding: 0;
   text-decoration: none;
   cursor: pointer;
 }
+
+
+
