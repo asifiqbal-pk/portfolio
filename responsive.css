@@ -163,8 +163,8 @@
   flex-direction: column; /* Stack the icon and text vertically */
   font-size: 11px;
   line-height: 1rem;
-  width: 3.7rem;
-  min-height: 8vh;
+  width: 3.5rem;
+  min-height: 7vh;
   text-wrap: wrap;
   padding: 4px 0;
   text-align: center;
