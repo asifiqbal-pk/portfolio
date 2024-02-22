@@ -43,24 +43,24 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize Owl Carousel
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        items:1,
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoHeight:false,
-        autoplayTimeout:5000,
-        autoplayHoverPause:true
-    });
-    $('.play').on('click',function(){
-        owl.trigger('play.owl.autoplay',[1000])
-    });
-    $('.stop').on('click',function(){
-        owl.trigger('stop.owl.autoplay')
-    });
+// Initialize Owl Carousel
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:1,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoHeight:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
 });
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+});
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+});
+
 
 
 // Functionality for Branding Portfolio 
