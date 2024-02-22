@@ -1,100 +1,81 @@
 document.addEventListener('DOMContentLoaded', function() {
+    $(document).ready(function() {
+        // Sidebar toggle functionality
+        const toggleButton = document.getElementById('toggle-button');
+        const sidebar = document.getElementById('sidebar');
+        const contentArea = document.querySelector('body');
     
-// Sidebar toggle functionality
-    const toggleButton = document.getElementById('toggle-button');
-    const sidebar = document.getElementById('sidebar');
-    const contentArea = document.querySelector('body'); // Selecting the body as the area to listen for clicks
-
-    toggleButton.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
-    });
-
-    contentArea.addEventListener('click', function(e) {
-        // Check if sidebar is active and the clicked target is not the sidebar or toggle button
-        if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== toggleButton) {
-            sidebar.classList.remove('active');
-        }
-    });
-   
-// Enhanced navigation handling for portfolio-specific sections
-    const portfolioLinks = document.querySelectorAll('.portfolio-nav ul li a');
-
-    portfolioLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const hrefAttribute = this.getAttribute('href');
-            // Check if the href attribute contains '#', indicating an internal section link
-            if (hrefAttribute.startsWith('#')) {
-                e.preventDefault(); // Prevent default link behavior for internal navigation
-
-                const targetId = hrefAttribute;
-                const targetSection = document.querySelector(targetId);
-                const contentSections = document.querySelectorAll('.dynamic-content .content-section');
-
-                // Hide all content sections
-                contentSections.forEach(section => section.classList.remove('active'));
-
-                // Show the target content section
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                } else {
-                    console.error('Target section not found: ' + targetId);
-                }
+        toggleButton.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+    
+        contentArea.addEventListener('click', function(e) {
+            if (sidebar.classList.contains('active') && !sidebar.contains(e.target) && e.target !== toggleButton) {
+                sidebar.classList.remove('active');
             }
         });
-    });
-
     
-// Initialize Owl Carousel
-var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:1,
-    loop:true,
-    margin:10,
-    autoplay:true,
-    autoHeight:false,
-    autoplayTimeout:5000,
-    autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[1000])
-});
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-});
-
-
-
-// Functionality for Branding Portfolio 
-$(document).ready(function() {
-    $('a[data-bs-toggle="tab"]').on('click', function(e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-});
-
-
-// Modal Functionality for Portfolio Images
-$(document).ready(function(){
-    // Select all images within the portfolio-wrapper class and add click event
-    $('.portfolio-wrapper img').click(function(){
-        var src = $(this).attr('src'); // Get the source of the clicked image
-        $('#modalImage').attr('src', src); // Set the source of the modal image to the clicked image's source
-        $('#imageModal').css('display', 'block'); // Display the modal
-    });
-
-    // Get the <span> element that closes the modal using jQuery
-    var $span = $(".close").first(); // Assuming there's only one element with class "close"
-
-    // When the user clicks on <span> (x), close the modal
-    $span.on('click', function() { 
-        $('#imageModal').css('display', 'none');
-    });
-
-    // Also close the modal if the user clicks anywhere outside of the modal image
-    $(window).on('click', function(event) {
-        if ($(event.target).is('#imageModal')) {
+        // Enhanced navigation handling for portfolio-specific sections
+        document.querySelectorAll('.portfolio-nav ul li a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const hrefAttribute = this.getAttribute('href');
+                if (hrefAttribute.startsWith('#')) {
+                    e.preventDefault();
+                    const targetSection = document.querySelector(hrefAttribute);
+                    document.querySelectorAll('.dynamic-content .content-section').forEach(section => {
+                        section.classList.remove('active');
+                    });
+                    if (targetSection) {
+                        targetSection.classList.add('active');
+                    } else {
+                        console.error('Target section not found: ' + hrefAttribute);
+                    }
+                }
+            });
+        });
+    
+        // Initialize Owl Carousel
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            items: 1,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoHeight: false,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true
+        });
+    
+        $('.play').on('click', function() {
+            owl.trigger('play.owl.autoplay', [1000]);
+        });
+    
+        $('.stop').on('click', function() {
+            owl.trigger('stop.owl.autoplay');
+        });
+    
+        // Functionality for Branding Portfolio
+        $('a[data-bs-toggle="tab"]').on('click', function(e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
+    
+        // Modal Functionality for Portfolio Images
+        $('.portfolio-wrapper img').click(function() {
+            var src = $(this).attr('src');
+            $('#modalImage').attr('src', src);
+            $('#imageModal').css('display', 'block');
+        });
+    
+        var $span = $(".close").first();
+        $span.on('click', function() {
             $('#imageModal').css('display', 'none');
-             }
+        });
+    
+        $(window).on('click', function(event) {
+            if ($(event.target).is('#imageModal')) {
+                $('#imageModal').css('display', 'none');
+            }
         });
     });
 });
