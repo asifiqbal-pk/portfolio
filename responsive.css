@@ -163,7 +163,7 @@
   flex-direction: column; /* Stack the icon and text vertically */
   font-size: 11px;
   line-height: 1rem;
-  width: 4rem;
+  width: 3.7rem;
   min-height: 8vh;
   text-wrap: wrap;
   padding: 4px 0;
@@ -173,7 +173,7 @@
 
 .portfolio-nav i {
   font-size: 12px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .content-section h2{
