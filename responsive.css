@@ -1,10 +1,10 @@
 @media (max-width: 600px) {
   .sidebar {
-      width: 50px; /* Minimized width on small screens */
+      width: 45px; /* Minimized width on small screens */
   }
 
   .sidebar.active {
-      width: 272px; /* Expand when active */
+      width: 263px; /* Expand when active */
   }
 
   #toggle-button {
@@ -20,7 +20,7 @@
   }
 
   .sidebar img {
-    width: 33%; /* Adjust image size */
+    width: 40%; /* Adjust image size */
     height: auto;
     margin: 10px 10%; /* Center the image */
     border: 2px solid #fff;
@@ -29,50 +29,48 @@
   }
 
   .sidebar h3 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.1rem;
   }
 
   .sidebar p {
-    font-size: 0.9em; 
+    font-size: 0.8em; 
     font-weight: 300; 
-    line-height: 1.3em;
+    line-height: 1.5em;
     padding: 0 10px;
   }
   .contacts {
     width: 100%;
     height: auto;
-    color: #ffffff;
     text-align: left;
     padding: 0px 12px;
     z-index: 999;
   }
   
   .contacts p {
-    font-size: 12px;
-    color: #fff;
+    font-size: 13px;
   }
    
   .contacts i {
-    margin-right: 7px;
-    color: #fff;
-    padding-bottom: 0.5rem;
+    margin-right: 0.7rem;
+    font-size: 13px;
+    padding-bottom: 0.4rem;
   }
   
   .footer p {
     position: relative;
-    font-size: 10px;
-    color: #fff;
+    font-size: 12px;
     padding: 5px 12px;
     text-align: left;
   }
  
   
 #main-content {
-      margin-left: 30px; /* Adjust for minimized sidebar */
-      margin-right: 0px; /* Adjust for minimized sidebar */
-      padding-left: 1.5rem;
+      margin-left: 40px; /* Adjust for minimized sidebar */
+      margin-right: 10px; /* Adjust for minimized sidebar */
+      padding-left: 1rem;
       padding-right: 0.5rem;
       align-items: center;
+      font-size: 0.9em;
   }
 
  
@@ -81,11 +79,37 @@
   text-transform: uppercase;
   font-weight: 600;
   line-height: 1.7rem;
-  margin-bottom: 0rem;
+  margin-bottom: 0.5rem;
   margin-left: 30px;
   padding: 10px 10px;
 }
 
+
+.about-container {
+  padding: 2% 3%;
+}
+.about-box {
+  padding: 0.35rem;
+  margin-right: 0.1em;
+  margin-left: 0.3em;
+  height: 19vh;
+  width: 45%;
+}
+
+.about-box h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about-box p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.about-box i {
+  font-size: 1.7rem;
+}
 .skills-container{
   display: block;
   margin-left: 4rem;
@@ -97,18 +121,22 @@
 
   .skills-container .skills-box {
           width: 72%;
-          margin-bottom: 1.5rem;
-          margin-left: 2rem;
+          margin-bottom: 2rem;
+          margin-left: 4rem;
           height: auto;
-          padding: 0.5rem;
-
+          padding: 0.7rem;
   }
-  .skills-container .about-box {
-      display:flex;
-      flex-direction:row;
-      flex-wrap:wrap;
-      margin-bottom: 1rem;
-      padding: 0.3rem;
+
+  .skills-box h5 {
+    font-size: 1.8em;
+    font-weight: 700;
+    padding-bottom: 1.2em;
+    padding-top: 0.4rem;
+  }
+  
+  .skills-box li {
+    font-size: 1.1em;
+    padding-bottom: 0.5rem;
   }
 
   .left-column {
@@ -130,11 +158,11 @@
 }
 
 .testimonial-content span {
-    font-size: 0.8em;
+    font-size: 1em;
  }
 
 .testimonial-content p {
-  font-size: 0.8em;
+  font-size: 1em;
   }
 
   .owl-carousel .owl-nav .owl-prev {
@@ -158,19 +186,19 @@
 
 .portfolio-nav li a {
   flex-direction: column; /* Stack the icon and text vertically */
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1rem;
-  width: 3.4rem;
-  min-height: 7vh;
+  width: 5rem;
+  min-height: 8vh;
   text-wrap: wrap;
-  padding: 4px 0;
+  padding: 7px 10px;
   text-align: center;
   line-height: 1.2;
 }
 
 .portfolio-nav i {
-  font-size: 12px;
-  margin-bottom: 0.3rem;
+  font-size: 15px;
+  margin-bottom: 0.4rem;
 }
 
 .content-section h2{
@@ -202,17 +230,17 @@
 }
 
 .branding-menu ul a {
-  font-size: 0.65em;
+  font-size: 0.8em;
   font-weight: 300;
   margin: 0.3rem;
-  width: 4rem;
-  padding: 0.3rem;
+  width: 5.5rem;
+  padding: 0.4rem;
   text-align: center;
   text-wrap: wrap;
 }
 
 .branding-menu li {
-margin-bottom: 0.2rem;
+margin-bottom: 0.4rem;
 }
 
 .branding-box img {
@@ -332,21 +360,262 @@ margin-left: 30px;
 padding: 10px 10px;
 }
 
+.about-container {
+  padding: 2% 3%;
+}
+.about-box {
+  padding: 0.2rem;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+  height: 21vh;
+  width: 17%;
+}
+
+.about-box h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about-box p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.about-box i {
+  font-size: 1.5rem;
+}
+
+
 .skills-container{
 display: block;
-margin-left: 4rem;
 flex-basis: 100%; /* Stack columns vertically on small screens */
-font-size: 0.9em;
+font-size: 0.8em;
 padding: 0;
 margin: 0;
 }
 
 .skills-container .skills-box {
-        width: 72%;
+        width: 30%;
         margin-bottom: 1.5rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         height: auto;
-        padding: 0.5rem;
+        padding: 0.3rem;
+        vertical-align: top;
+        height: 50vh;
+}
+
+
+.left-column {
+    flex-basis: 100%; /* Stack columns vertically on small screens */
+    padding-left: 1.5rem;
+}
+.right-column {
+    flex-basis: 100%; /* Stack columns vertically on small screens */
+    padding: 0;
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+/* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
+
+.testimonial-content h4 {
+font-size: 1.2em; /* Adapted for better scaling across devices */
+}
+
+.testimonial-content span {
+  font-size: 0.8em;
+}
+
+.testimonial-content p {
+font-size: 0.8em;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    display: none;}
+.owl-carousel .owl-nav .owl-next {
+    display:none}
+
+.owl-carousel .owl-nav .owl-dot {
+  display: block;}
+
+
+/*-----------Portfolio SECTION----------*/
+
+.portfolio-nav ul {
+  padding: 0.4rem 0;
+ }
+ 
+ .portfolio-nav li {
+ margin: 0.4rem;
+ }
+ 
+ .portfolio-nav li a {
+ flex-direction: column; /* Stack the icon and text vertically */
+ font-size: 12px;
+ line-height: 1rem;
+ width: 7rem;
+ height: 6.5vh;
+ text-wrap: wrap;
+ padding: 3px 0;
+ text-align: center;
+ }
+ 
+ .portfolio-nav i {
+ font-size: 15px;
+ margin-bottom: 0.3rem;
+ }
+ 
+ .content-section h2{
+ padding: 0.5rem;
+ font-size: 1.3rem;
+ }
+ 
+ 
+ /* ------------- Branding Portfolio  CSS  --------------*/
+ 
+ .branding-content {
+ padding: 10px 5px;
+ }
+ 
+ .branding-menu ul {
+ padding: 10px 5px;
+ }
+ 
+ .branding-menu ul a {
+ font-size: 0.85em;
+ font-weight: 400;
+ margin:0 0.7rem;
+ width: 6.5rem;
+ min-height: 3.5rem;
+ padding: 0.4rem 0.7rem;
+ text-align: center;
+ text-wrap: wrap;
+ }
+ 
+ .branding-menu li {
+ margin-bottom: 0.2rem;
+ }
+ 
+ .branding-box img {
+ max-height: 20vh;
+ width:fit-content;
+ margin: 0.5rem; /* Increased spacing */
+ }
+ 
+ .logo-branding img {
+ margin: 0.9rem; /* Increased spacing */
+ width: 25%; /* Ensure responsiveness */
+ height: 25%;
+ }
+ }
+ 
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+ 
+  .sidebar {
+    width: 21%; /* Minimized width on small screens */
+    padding:10px 0;
+    
+}
+
+.sidebar.active #sidebar-content {
+    display: block; /* Show content when sidebar is active */
+}
+
+.sidebar img {
+  width: 40%; /* Adjust image size */
+  height: auto;
+  margin: 10px 10%; /* Center the image */
+  border: 2px solid #fff;
+  border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
+  margin-bottom: 1rem;
+}
+
+.sidebar h3 {
+  font-size: 1em; 
+  font-weight: 500; 
+  padding-bottom: 0.3rem;
+
+}
+
+.sidebar p {
+  font-size: 0.7em; 
+  font-weight: 300; 
+  line-height: 1.3em;
+  padding: 0 10px;
+}
+.contacts {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 5px;
+  z-index: 999;
+}
+
+.contacts p {
+  font-size: 11px;
+  color: #fff;
+}
+ 
+.contacts i {
+  margin-right: 0.2rem;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.footer p {
+  position: relative;
+  font-size: 11px;
+  color: #fff;
+  padding: 5px 12px;
+  text-align: left;
+}
+
+
+#main-content {
+    margin-left: 20%; /* Adjust for minimized sidebar */
+    margin-right: 0px; /* Adjust for minimized sidebar */
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+
+#main-heading {
+font-size:1.6em;
+text-transform: uppercase;
+font-weight: 600;
+line-height: 1.7rem;
+margin-bottom: 0rem;
+margin-left: 20%;
+padding: 10px 10px;
+}
+
+.skills-container{
+display: block;
+font-size: 0.8em;
+padding: 0;
+margin: 0;
+}
+
+.skills-container .skills-box {
+        width: 30%;
+        margin-bottom: 1.5rem;
+        margin-left: 0.5rem;
+        height: 50vh;
+        padding: 0rem;
+        vertical-align: top;
 
 }
 .skills-container .about-box {
@@ -354,7 +623,7 @@ margin: 0;
     flex-direction:row;
     flex-wrap:wrap;
     margin-bottom: 1rem;
-    padding: 0.3rem;
+    padding: 3.3rem;
 }
 
 .left-column {
@@ -395,64 +664,52 @@ font-size: 0.8em;
 /*-----------Portfolio SECTION----------*/
 
 .portfolio-nav ul {
- padding: 0.4rem 0;
+ padding: 0.3rem 0rem;
 }
 
 .portfolio-nav li {
-margin: 0.2rem;
+margin: 0.4rem;
 }
 
 .portfolio-nav li a {
 flex-direction: column; /* Stack the icon and text vertically */
-font-size: 10px;
+font-size: 13px;
 line-height: 1rem;
-width: 3.4rem;
-min-height: 7vh;
+min-width: 7rem;
+min-height: 6.5vh;
 text-wrap: wrap;
-padding: 4px 0;
+padding: 1px 0;
 text-align: center;
-line-height: 1.2;
 }
 
 .portfolio-nav i {
-font-size: 12px;
+font-size: 15px;
 margin-bottom: 0.3rem;
 }
 
 .content-section h2{
-padding: 0.4rem;
-margin-bottom: 0.7rem;
-font-size: 1.1rem;
+padding: 0.5rem;
+font-size: 1.3rem;
 }
 
-.video {
-width: 92%; /* Adjust based on your design preference */
-}
-
-.video iframe {
-margin-left: 1rem;
-}
-
-.card-body {
-font-size: 0.8em;
-}
 
 /* ------------- Branding Portfolio  CSS  --------------*/
 
 .branding-content {
-padding: 15px 10px;
+padding: 10px 5px;
 }
 
 .branding-menu ul {
-padding: 5px 5px;
+padding: 10px 5px;
 }
 
 .branding-menu ul a {
-font-size: 0.65em;
-font-weight: 300;
-margin: 0.3rem;
-width: 4rem;
-padding: 0.3rem;
+font-size: 0.85em;
+font-weight: 400;
+margin:0 0.7rem;
+width: 6.5rem;
+min-height: 3.5rem;
+padding: 0.4rem 0.7rem;
 text-align: center;
 text-wrap: wrap;
 }
@@ -470,7 +727,7 @@ margin: 0.5rem; /* Increased spacing */
 .logo-branding img {
 margin: 0.9rem; /* Increased spacing */
 width: 25%; /* Ensure responsiveness */
-height: auto;
+height: 25%;
 }
 }
 
@@ -481,28 +738,19 @@ height: auto;
 
 
 
-
-
-
-
-
-
-@media only screen and (min-width: 801px) and (max-width: 1000px) {
+@media only screen and (min-width: 1001px) and (max-width: 1100px) {
  
-  .sidebar {
-    width: 50px; /* Minimized width on small screens */
+.sidebar {
+    width: 23% /* Minimized width on small screens */
 }
 
-.sidebar.active {
-    width: 272px; /* Expand when active */
-}
 
 #toggle-button {
-    display: block; /* Show toggle button on small screens */
+    display: none; /* Show toggle button on small screens */
 }
 
 #sidebar-content {
-    display: none; /* Hide content by default on small screens */
+    display: block; /* Hide content by default on small screens */
 }
 
 .sidebar.active #sidebar-content {
@@ -523,11 +771,9 @@ height: auto;
 }
 
 .sidebar p {
-  font-size: 0.9em; 
-  font-weight: 300; 
-  line-height: 1.3em;
-  padding: 0 10px;
-}
+  font-size: 0.8em; 
+  }
+
 .contacts {
   width: 100%;
   height: auto;
@@ -543,14 +789,14 @@ height: auto;
 }
  
 .contacts i {
-  margin-right: 7px;
+  margin-right: 9px;
   color: #fff;
   padding-bottom: 0.5rem;
 }
 
 .footer p {
   position: relative;
-  font-size: 10px;
+  font-size: 12px;
   color: #fff;
   padding: 5px 12px;
   text-align: left;
@@ -558,10 +804,10 @@ height: auto;
 
 
 #main-content {
-    margin-left: 30px; /* Adjust for minimized sidebar */
+    margin-left: 250px; /* Adjust for minimized sidebar */
     margin-right: 0px; /* Adjust for minimized sidebar */
     padding-left: 1.5rem;
-    padding-right: 0.5rem;
+    padding-right: 0;
     align-items: center;
 }
 
@@ -572,13 +818,13 @@ text-transform: uppercase;
 font-weight: 600;
 line-height: 1.7rem;
 margin-bottom: 0rem;
-margin-left: 30px;
+margin-left: 250px;
 padding: 10px 10px;
 }
 
 .skills-container{
 display: block;
-margin-left: 4rem;
+margin-left: 22%;
 flex-basis: 100%; /* Stack columns vertically on small screens */
 font-size: 0.9em;
 padding: 0;
@@ -586,11 +832,13 @@ margin: 0;
 }
 
 .skills-container .skills-box {
-        width: 72%;
+        width: 31%;
         margin-bottom: 1.5rem;
-        margin-left: 2rem;
+        margin-left: 0.5rem;
         height: auto;
-        padding: 0.5rem;
+        padding: 0.2rem;
+        vertical-align: top;
+        min-height: 55vh;
 
 }
 .skills-container .about-box {
@@ -602,13 +850,14 @@ margin: 0;
 }
 
 .left-column {
-    flex-basis: 100%; /* Stack columns vertically on small screens */
+    flex-basis: 45%; /* Stack columns vertically on small screens */
     padding-left: 1.5rem;
+    
 }
 .right-column {
-    flex-basis: 100%; /* Stack columns vertically on small screens */
+    flex-basis: 55%; /* Stack columns vertically on small screens */
     padding: 0;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     padding-left: 1.5rem;
     padding-right: 1rem;
 }
@@ -639,88 +888,73 @@ font-size: 0.8em;
 /*-----------Portfolio SECTION----------*/
 
 .portfolio-nav ul {
- padding: 0.4rem 0;
-}
-
-.portfolio-nav li {
-margin: 0.2rem;
-}
-
-.portfolio-nav li a {
-flex-direction: column; /* Stack the icon and text vertically */
-font-size: 10px;
-line-height: 1rem;
-width: 3.4rem;
-min-height: 7vh;
-text-wrap: wrap;
-padding: 4px 0;
-text-align: center;
-line-height: 1.2;
-}
-
-.portfolio-nav i {
-font-size: 12px;
-margin-bottom: 0.3rem;
-}
-
-.content-section h2{
-padding: 0.4rem;
-margin-bottom: 0.7rem;
-font-size: 1.1rem;
-}
-
-.video {
-width: 92%; /* Adjust based on your design preference */
-}
-
-.video iframe {
-margin-left: 1rem;
-}
-
-.card-body {
-font-size: 0.8em;
-}
-
-/* ------------- Branding Portfolio  CSS  --------------*/
-
-.branding-content {
-padding: 15px 10px;
-}
-
-.branding-menu ul {
-padding: 5px 5px;
-}
-
-.branding-menu ul a {
-font-size: 0.65em;
-font-weight: 300;
-margin: 0.3rem;
-width: 4rem;
-padding: 0.3rem;
-text-align: center;
-text-wrap: wrap;
-}
-
-.branding-menu li {
-margin-bottom: 0.2rem;
-}
-
-.branding-box img {
-max-height: 20vh;
-width:fit-content;
-margin: 0.5rem; /* Increased spacing */
-}
-
-.logo-branding img {
-margin: 0.9rem; /* Increased spacing */
-width: 25%; /* Ensure responsiveness */
-height: auto;
-}
-}
-
-
-
-
+  padding: 0.4rem 0;
+ }
+ 
+ .portfolio-nav li {
+ margin: 0.5rem;
+ }
+ 
+ .portfolio-nav li a {
+ flex-direction: column; /* Stack the icon and text vertically */
+ font-size: 13px;
+ line-height: 1rem;
+ width: 8rem;
+ min-height: 6.5vh;
+ text-wrap: wrap;
+ padding: 3px 0;
+ text-align: center;
+ }
+ 
+ .portfolio-nav i {
+ font-size: 15px;
+ margin-bottom: 0.3rem;
+ }
+ 
+ .content-section h2{
+ padding: 0.5rem;
+ font-size: 1.3rem;
+ }
+ 
+ 
+ /* ------------- Branding Portfolio  CSS  --------------*/
+ 
+ .branding-content {
+ padding: 10px 5px;
+ }
+ 
+ .branding-menu ul {
+ padding: 10px 5px;
+ }
+ 
+ .branding-menu ul a {
+ font-size: 0.85em;
+ font-weight: 400;
+ margin:0 0.7rem;
+ width: 6.5rem;
+ min-height: 3.5rem;
+ padding: 0.4rem 0.7rem;
+ text-align: center;
+ text-wrap: wrap;
+ }
+ 
+ .branding-menu li {
+ margin-bottom: 0.2rem;
+ }
+ 
+ .branding-box img {
+ max-height: 20vh;
+ width:fit-content;
+ margin: 0.5rem; /* Increased spacing */
+ }
+ 
+ .logo-branding img {
+ margin: 0.9rem; /* Increased spacing */
+ width: 25%; /* Ensure responsiveness */
+ height: 25%;
+ }
+ }
+ 
 
 
 
