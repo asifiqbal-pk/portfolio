@@ -1,4 +1,4 @@
-@media (max-width: 712px) {
+@media (max-width: 600px) {
   .sidebar {
       width: 50px; /* Minimized width on small screens */
   }
@@ -123,9 +123,7 @@
       padding-right: 1rem;
   }
  
-/*==============================================
-     TESTIMONOALS BLOCK CSS
-================================================*/
+/* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
 
 .testimonial-content h4 {
   font-size: 1.2em; /* Adapted for better scaling across devices */
@@ -157,7 +155,6 @@
 .portfolio-nav li {
   margin: 0.2rem;
 }
-
 
 .portfolio-nav li a {
   flex-direction: column; /* Stack the icon and text vertically */
@@ -194,9 +191,7 @@
   font-size: 0.8em;
 }
  
-/*==============================================
-     Branding Portfolio  CSS
-================================================*/
+/* ------------- Branding Portfolio  CSS  --------------*/
 
 .branding-content {
   padding: 15px 10px;
@@ -232,3 +227,478 @@ margin-bottom: 0.2rem;
   height: auto;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ width upto 800 with Toggle =====*/
+
+
+@media only screen and (min-width: 601px) and (max-width: 800px) {
+ 
+  .sidebar {
+    width: 50px; /* Minimized width on small screens */
+}
+
+.sidebar.active {
+    width: 272px; /* Expand when active */
+}
+
+#toggle-button {
+    display: block; /* Show toggle button on small screens */
+}
+
+#sidebar-content {
+    display: none; /* Hide content by default on small screens */
+}
+
+.sidebar.active #sidebar-content {
+    display: block; /* Show content when sidebar is active */
+}
+
+.sidebar img {
+  width: 33%; /* Adjust image size */
+  height: auto;
+  margin: 10px 10%; /* Center the image */
+  border: 2px solid #fff;
+  border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
+  margin-bottom: 1rem;
+}
+
+.sidebar h3 {
+  padding-bottom: 0.5rem;
+}
+
+.sidebar p {
+  font-size: 0.9em; 
+  font-weight: 300; 
+  line-height: 1.3em;
+  padding: 0 10px;
+}
+.contacts {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 12px;
+  z-index: 999;
+}
+
+.contacts p {
+  font-size: 12px;
+  color: #fff;
+}
+ 
+.contacts i {
+  margin-right: 7px;
+  color: #fff;
+  padding-bottom: 0.5rem;
+}
+
+.footer p {
+  position: relative;
+  font-size: 10px;
+  color: #fff;
+  padding: 5px 12px;
+  text-align: left;
+}
+
+
+#main-content {
+    margin-left: 30px; /* Adjust for minimized sidebar */
+    margin-right: 0px; /* Adjust for minimized sidebar */
+    padding-left: 1.5rem;
+    padding-right: 0.5rem;
+    align-items: center;
+}
+
+
+#main-heading {
+font-size:1.6em;
+text-transform: uppercase;
+font-weight: 600;
+line-height: 1.7rem;
+margin-bottom: 0rem;
+margin-left: 30px;
+padding: 10px 10px;
+}
+
+.skills-container{
+display: block;
+margin-left: 4rem;
+flex-basis: 100%; /* Stack columns vertically on small screens */
+font-size: 0.9em;
+padding: 0;
+margin: 0;
+}
+
+.skills-container .skills-box {
+        width: 72%;
+        margin-bottom: 1.5rem;
+        margin-left: 2rem;
+        height: auto;
+        padding: 0.5rem;
+
+}
+.skills-container .about-box {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+}
+
+.left-column {
+    flex-basis: 100%; /* Stack columns vertically on small screens */
+    padding-left: 1.5rem;
+}
+.right-column {
+    flex-basis: 100%; /* Stack columns vertically on small screens */
+    padding: 0;
+    margin-top: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+/* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
+
+.testimonial-content h4 {
+font-size: 1.2em; /* Adapted for better scaling across devices */
+}
+
+.testimonial-content span {
+  font-size: 0.8em;
+}
+
+.testimonial-content p {
+font-size: 0.8em;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+    display: none;}
+.owl-carousel .owl-nav .owl-next {
+    display:none}
+
+.owl-carousel .owl-nav .owl-dot {
+  display: block;}
+
+
+/*-----------Portfolio SECTION----------*/
+
+.portfolio-nav ul {
+ padding: 0.4rem 0;
+}
+
+.portfolio-nav li {
+margin: 0.2rem;
+}
+
+.portfolio-nav li a {
+flex-direction: column; /* Stack the icon and text vertically */
+font-size: 10px;
+line-height: 1rem;
+width: 3.4rem;
+min-height: 7vh;
+text-wrap: wrap;
+padding: 4px 0;
+text-align: center;
+line-height: 1.2;
+}
+
+.portfolio-nav i {
+font-size: 12px;
+margin-bottom: 0.3rem;
+}
+
+.content-section h2{
+padding: 0.4rem;
+margin-bottom: 0.7rem;
+font-size: 1.1rem;
+}
+
+.video {
+width: 92%; /* Adjust based on your design preference */
+}
+
+.video iframe {
+margin-left: 1rem;
+}
+
+.card-body {
+font-size: 0.8em;
+}
+
+/* ------------- Branding Portfolio  CSS  --------------*/
+
+.branding-content {
+padding: 15px 10px;
+}
+
+.branding-menu ul {
+padding: 5px 5px;
+}
+
+.branding-menu ul a {
+font-size: 0.65em;
+font-weight: 300;
+margin: 0.3rem;
+width: 4rem;
+padding: 0.3rem;
+text-align: center;
+text-wrap: wrap;
+}
+
+.branding-menu li {
+margin-bottom: 0.2rem;
+}
+
+.branding-box img {
+max-height: 20vh;
+width:fit-content;
+margin: 0.5rem; /* Increased spacing */
+}
+
+.logo-branding img {
+margin: 0.9rem; /* Increased spacing */
+width: 25%; /* Ensure responsiveness */
+height: auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1100px) {
+ 
+  .sidebar.active #sidebar-content {
+      display: block; /* Show content when sidebar is active */
+  }
+
+  .sidebar img {
+    width: 25%; /* Adjust image size */
+    height: auto;
+    margin: 10px 10%; /* Center the image */
+    border: 2px solid #fff;
+    border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
+    margin-bottom: 1rem;
+  }
+
+  .sidebar h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .sidebar p {
+    font-size: 0.9em; 
+    font-weight: 300; 
+    line-height: 1.3em;
+    padding: 0 10px;
+  }
+  .contacts {
+    width: 100%;
+    height: auto;
+    color: #ffffff;
+    text-align: left;
+    padding: 0px 12px;
+    z-index: 999;
+  }
+  
+  .contacts p {
+    font-size: 11px;
+    color: #fff;
+  }
+   
+  .contacts i {
+    margin-right: 7px;
+    color: #fff;
+    padding-bottom: 0.5rem;
+  }
+  
+  .footer p {
+    position: relative;
+    font-size: 9px;
+    color: #fff;
+    padding: 5px 12px;
+    text-align: left;
+  }
+ 
+  
+#main-content {
+      margin-left: 30px; /* Adjust for minimized sidebar */
+      margin-right: 0px; /* Adjust for minimized sidebar */
+      padding-left: 1.5rem;
+      padding-right: 0.5rem;
+      align-items: center;
+  }
+
+ 
+#main-heading {
+  font-size:1.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.7rem;
+  margin-bottom: 0rem;
+  margin-left: 30px;
+  padding: 10px 10px;
+}
+
+.skills-container{
+  display: block;
+  margin-left: 4rem;
+  flex-basis: 100%; /* Stack columns vertically on small screens */
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+  }
+
+  .skills-container .skills-box {
+          width: 72%;
+          margin-bottom: 1.5rem;
+          margin-left: 2rem;
+          height: auto;
+          padding: 0.5rem;
+
+  }
+  .skills-container .about-box {
+      display:flex;
+      flex-direction:row;
+      flex-wrap:wrap;
+      margin-bottom: 1rem;
+      padding: 0.3rem;
+  }
+
+  .left-column {
+      flex-basis: 45%; /* Stack columns vertically on small screens */
+      padding-left: 1.5rem;
+  }
+  .right-column {
+      flex-basis: 55%; /* Stack columns vertically on small screens */
+      padding: 0;
+      margin-top: 2.5rem;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
+  }
+ 
+/* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
+
+.testimonial-content h4 {
+  font-size: 1.2em; /* Adapted for better scaling across devices */
+}
+
+.testimonial-content span {
+    font-size: 0.8em;
+ }
+
+.testimonial-content p {
+  font-size: 0.8em;
+  }
+
+  .owl-carousel .owl-nav .owl-prev {
+      display: none;}
+  .owl-carousel .owl-nav .owl-next {
+      display:none}
+  
+  .owl-carousel .owl-nav .owl-dot {
+    display: block;}
+
+
+/*-----------Portfolio SECTION----------*/
+
+.portfolio-nav ul {
+   padding: 0.4rem 0;
+}
+
+.portfolio-nav li {
+  margin: 0.2rem;
+}
+
+.portfolio-nav li a {
+  flex-direction: column; /* Stack the icon and text vertically */
+  font-size: 10px;
+  line-height: 1rem;
+  width: 3.4rem;
+  min-height: 7vh;
+  text-wrap: wrap;
+  padding: 4px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.portfolio-nav i {
+  font-size: 12px;
+  margin-bottom: 0.3rem;
+}
+
+.content-section h2{
+  padding: 0.4rem;
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.video {
+  width: 92%; /* Adjust based on your design preference */
+}
+
+.video iframe {
+  margin-left: 1rem;
+}
+
+.card-body {
+  font-size: 0.8em;
+}
+ 
+/* ------------- Branding Portfolio  CSS  --------------*/
+
+.branding-content {
+  padding: 15px 10px;
+}
+
+.branding-menu ul {
+  padding: 5px 5px;
+}
+
+.branding-menu ul a {
+  font-size: 0.65em;
+  font-weight: 300;
+  margin: 0.3rem;
+  width: 4rem;
+  padding: 0.3rem;
+  text-align: center;
+  text-wrap: wrap;
+}
+
+.branding-menu li {
+margin-bottom: 0.2rem;
+}
+
+.branding-box img {
+  max-height: 20vh;
+  width:fit-content;
+  margin: 0.5rem; /* Increased spacing */
+}
+
+.logo-branding img {
+  margin: 0.9rem; /* Increased spacing */
+  width: 25%; /* Ensure responsiveness */
+  height: auto;
+  }
+}
+
