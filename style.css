@@ -594,7 +594,6 @@ nav.vertical-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Adjust this as needed */
-
 }
 
 .video-card{
@@ -667,7 +666,7 @@ transition: transform 0.5s ease;
 }
 
 .tab-content {
- align-items: center;
+  align-items: center;
 }
 
 .branding-menu ul {
@@ -690,11 +689,11 @@ transition: transform 0.5s ease;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
   margin: 0.7rem;
   margin-top: 0.1rem;
-  }
+}
 
 .branding-menu li {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .branding-menu a.active {
