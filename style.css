@@ -52,11 +52,11 @@
 }
 
 .sidebar h3 {
-  color: #fff; font-size: 1.2em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
+  color: #fff; font-size: 1.15em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
 }
 
 .sidebar p {
-  color: #fff; font-size: 0.85em; font-weight: 300; line-height: 1.2em;
+  color: #fff; font-size: 0.9em; font-weight: 300; line-height: 1.2em;
 }
 
 .contacts {
@@ -120,7 +120,7 @@
 
 .right-column {
   width: 55%;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }
 
 /* =====================================================
