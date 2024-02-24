@@ -19,7 +19,7 @@
     width: 21%; /* Default width */
     height: 100%;
     transition: width 0.5s;
-    left: 12px;
+    left: 1%;
     top: 0;
     padding: 3% 1%;
     overflow-y: auto;
@@ -28,7 +28,7 @@
 #toggle-button {
     display: none; /* Hide by default on larger screens */
     cursor: pointer;
-    padding: 10px;
+    padding: 7px 11px;
     width: 100%;
     box-sizing: border-box;
     border: none;
@@ -52,11 +52,11 @@
 }
 
 .sidebar h3 {
-  color: #fff; font-size: 1.1em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
+  color: #fff; font-size: 1.2em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
 }
 
 .sidebar p {
-  color: #fff; font-size: 0.8em; font-weight: 300; line-height: 1.2em;
+  color: #fff; font-size: 0.85em; font-weight: 300; line-height: 1.2em;
 }
 
 .contacts {
@@ -69,14 +69,14 @@
 }
 
 .contacts p {
-  font-size: 13px;
+  font-size: 12px;
   color: #fff;
 }
  
 .contacts i {
-  margin-right: 7px;
+  margin-right: 0.5rem;
   color: #fff;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
 }
 
 .footer p {
@@ -130,18 +130,17 @@ nav.vertical-nav ul {
     list-style-type: none;
     font-size: 0.8em;
     text-align: left;
-    margin-left: 0.3rem;
-    font-weight: 450;
+    font-weight: 400;
   }
   
   .nav-icon {
-    font-size: 1.1em;
+    font-size: 1.2em;
     color: #3761b6;
     vertical-align: middle;
-    padding-left: 6px;
+    padding-left: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
-    margin-right: 19px;
+    margin-right: 11%;
   }
   
   nav.vertical-nav a {
@@ -149,7 +148,7 @@ nav.vertical-nav ul {
     color: #fff;
     display: block; /* makes the entire area clickable */
     padding: 5px; /* adds some padding inside the link */
-    margin-right: 19px;
+    margin-right: 12%;
     margin-bottom: 12px;
     border-radius: 50px;
     border-top: 1px solid #fff;
@@ -168,7 +167,8 @@ nav.vertical-nav ul {
     box-shadow: 0px 0px 10px #e1eaff;
     transform: translateX(5px);
     opacity: 1;
-    padding-left: 19px;
+    padding-left: 17px;
+    margin-right: 7%;
   }  
   
   nav.vertical-nav a:before{
@@ -190,7 +190,7 @@ nav.vertical-nav ul {
   }
   
   nav.vertical-nav a:focus:after,
-  nav.vertical-nav a:hover:after{ right: 8px; }
+  nav.vertical-nav a:hover:after{ right: 5px; }
 
 
 /*==============================================
@@ -208,7 +208,7 @@ nav.vertical-nav ul {
     display: inline-block;
     padding: 0.3rem;
     background:#f6f8fc;
-    margin: 2rem 0.4rem;
+    margin: 0.7rem 0.3rem;
     width: 11vw;
     min-height: 192px;
     vertical-align: top;
