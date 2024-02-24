@@ -516,10 +516,11 @@ nav.vertical-nav ul {
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
   text-decoration: none;
-  font-size: 13px;
+  font-size: 13.5px;
   line-height: 1.5rem;
   color: #000000;
-  padding: 9px 11px;
+  min-width: 8rem;
+  padding: 11px 11px;
   background:#ffffff;
   border-radius: 5px;
   border: solid #e1eaff 2px;
@@ -537,7 +538,7 @@ nav.vertical-nav ul {
 }
 
 .portfolio-nav i {
-  font-size: 17px;
+  font-size: 19px;
   margin-right: 0.5rem;
 }
 
