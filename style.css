@@ -203,16 +203,15 @@ nav.vertical-nav ul {
   .about-box {
     overflow: hidden;
     text-align:center;
-    Border: solid 1px;
-    border-color: #3761b6;
+    Border: solid 1px #3761b6;
     border-radius: 11px;
     display: inline-block;
     padding: 0.3rem;
     background:#f6f8fc;
-    margin-right: 0.4em;
-    margin-left: 0.4em;
-    height: 23vh;
+    margin: 2rem 0.4rem;
     width: 11vw;
+    min-height: 192px;
+    vertical-align: top;
   }
   
   .about-box h5 {
@@ -355,14 +354,12 @@ nav.vertical-nav ul {
   .skills-box {
     overflow: hidden;
     text-align:center;
-    Border: solid 1px;
-    border-color: #3761b6;
+    Border: solid 1px #3761b6;
     border-radius: 7px;
     display: inline-block;
     background:#e6eeff6c;
-    margin-right: 0.4em;
-    margin-left: 0.4em;
-    height: 50vh;
+    margin: 1rem 0.4em;
+    height: 412px;
     width: 22vw;
   }
   
@@ -454,11 +451,10 @@ nav.vertical-nav ul {
   
   .owl-carousel .owl-dots .owl-dot {
     width: 0.5rem;
-    height:7px;
-    margin: 0 4px;
+    height: 8px;
+    margin: 2rem 0.2rem;
     background: #e6eeffce;
     border: solid 1px#2C4D91;
-    margin-top: 3rem;
   }
   
   .owl-carousel .owl-dots .owl-dot:focus {
