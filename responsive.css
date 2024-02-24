@@ -20,7 +20,7 @@
   }
 
   .sidebar img {
-    width: 40%; /* Adjust image size */
+    width: 33%; /* Adjust image size */
     height: auto;
     margin: 10px 10%; /* Center the image */
     border: 2px solid #fff;
@@ -51,7 +51,7 @@
   }
    
   .contacts i {
-    margin-right: 0.7rem;
+    margin-right: 0.5rem;
     font-size: 13px;
     padding-bottom: 0.4rem;
   }
@@ -364,45 +364,45 @@ padding: 10px 10px;
   padding: 2% 3%;
 }
 .about-box {
-  padding: 0.2rem;
-  margin-right: 0.2em;
-  margin-left: 0.2em;
-  height: 21vh;
-  width: 17%;
+  padding: 0.5rem;
+  margin-right: 0.3em;
+  margin-left: 0.4em;
+  height: 17vh;
+  width: 30%;
 }
 
 .about-box h5 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .about-box p {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   line-height: 1.4;
   font-weight: 500;
 }
 
 .about-box i {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 
 .skills-container{
 display: block;
 flex-basis: 100%; /* Stack columns vertically on small screens */
-font-size: 0.8em;
+font-size: 1em;
 padding: 0;
 margin: 0;
 }
 
-.skills-container .skills-box {
-        width: 30%;
+.skills-box {
+        width: 72%;
         margin-bottom: 1.5rem;
-        margin-left: 1rem;
+        margin-left: 5rem;
         height: auto;
-        padding: 0.3rem;
+        padding: 5%;
         vertical-align: top;
-        height: 50vh;
+        height: 50%;
 }
 
 
@@ -520,11 +520,11 @@ font-size: 0.8em;
 
 
 
-@media only screen and (min-width: 801px) and (max-width: 1000px) {
+@media only screen and (min-width: 801px) and (max-width: 990px) {
  
   .sidebar {
-    width: 21%; /* Minimized width on small screens */
-    padding:10px 0;
+    width: 25%; /* Minimized width on small screens */
+    padding: 12px 0;
     
 }
 
@@ -535,25 +535,27 @@ font-size: 0.8em;
 .sidebar img {
   width: 40%; /* Adjust image size */
   height: auto;
-  margin: 10px 10%; /* Center the image */
+  margin: 30px 10%; /* Center the image */
   border: 2px solid #fff;
   border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
   margin-bottom: 1rem;
 }
 
-.sidebar h3 {
-  font-size: 1em; 
-  font-weight: 500; 
-  padding-bottom: 0.3rem;
 
+.sidebar h3 {
+  font-size: 99%; 
+  font-weight: 550; 
+  padding-bottom: 0.3rem;
 }
 
 .sidebar p {
-  font-size: 0.7em; 
-  font-weight: 300; 
+  font-size: 80%; 
+  font-weight: 300;
   line-height: 1.3em;
   padding: 0 10px;
 }
+
+
 .contacts {
   width: 100%;
   height: auto;
@@ -584,7 +586,7 @@ font-size: 0.8em;
 
 
 #main-content {
-    margin-left: 20%; /* Adjust for minimized sidebar */
+    margin-left: 23%; /* Adjust for minimized sidebar */
     margin-right: 0px; /* Adjust for minimized sidebar */
     padding-left: 1.5rem;
     padding-right: 0.5rem;
@@ -602,28 +604,52 @@ margin-left: 20%;
 padding: 10px 10px;
 }
 
+
+.about-container {
+  padding: 2% 3%;
+}
+.about-box {
+  padding: 0.3rem;
+  margin-right: 0.1em;
+  margin-left: 0.3em;
+  height: 19vh;
+  width: 30%;
+}
+
+.about-box h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.about-box p {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.about-box i {
+  font-size: 1.7rem;
+}
 .skills-container{
 display: block;
-font-size: 0.8em;
+font-size: 0.7em;
 padding: 0;
 margin: 0;
 }
 
-.skills-container .skills-box {
-        width: 30%;
+.skills-box {
+        min-width: 40%;
         margin-bottom: 1.5rem;
         margin-left: 0.5rem;
-        height: 50vh;
-        padding: 0rem;
+        height: 400px;
         vertical-align: top;
-
 }
-.skills-container .about-box {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    margin-bottom: 1rem;
-    padding: 3.3rem;
+
+.skills-box li {
+  font-size: 1.1em;
+  padding-bottom: 0.4rem;
+  line-height: 1.1rem;
+  color: #000000;
 }
 
 .left-column {
@@ -634,7 +660,7 @@ margin: 0;
     flex-basis: 100%; /* Stack columns vertically on small screens */
     padding: 0;
     margin-top: 2.5rem;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     padding-right: 1rem;
 }
 
@@ -738,7 +764,7 @@ height: 25%;
 
 
 
-@media only screen and (min-width: 1001px) and (max-width: 1100px) {
+@media only screen and (min-width: 991px) and (max-width: 1190px) {
  
 .sidebar {
     width: 23% /* Minimized width on small screens */
@@ -758,7 +784,7 @@ height: 25%;
 }
 
 .sidebar img {
-  width: 33%; /* Adjust image size */
+  width: 40%; /* Adjust image size */
   height: auto;
   margin: 10px 10%; /* Center the image */
   border: 2px solid #fff;
@@ -767,12 +793,16 @@ height: 25%;
 }
 
 .sidebar h3 {
+  font-size: 98%; 
+  font-weight: 550; 
   padding-bottom: 0.5rem;
 }
 
 .sidebar p {
-  font-size: 0.8em; 
-  }
+  font-size: 80%; 
+  font-weight: 300;
+  line-height: 1.2em;
+}
 
 .contacts {
   width: 100%;
@@ -804,11 +834,10 @@ height: 25%;
 
 
 #main-content {
-    margin-left: 250px; /* Adjust for minimized sidebar */
-    margin-right: 0px; /* Adjust for minimized sidebar */
-    padding-left: 1.5rem;
-    padding-right: 0;
-    align-items: center;
+      margin-left: 21%;
+      padding: 5px 40px;
+      display: flex;
+      flex-wrap: wrap;
 }
 
 
@@ -824,34 +853,27 @@ padding: 10px 10px;
 
 .skills-container{
 display: block;
-margin-left: 22%;
+margin-left: 25%;
 flex-basis: 100%; /* Stack columns vertically on small screens */
 font-size: 0.9em;
 padding: 0;
 margin: 0;
 }
 
-.skills-container .skills-box {
-        width: 31%;
+.skills-box {
+        width: 30%;
         margin-bottom: 1.5rem;
-        margin-left: 0.5rem;
-        height: auto;
+        margin-left: 0.3rem;
         padding: 0.2rem;
         vertical-align: top;
-        min-height: 55vh;
+        min-height: 450px;
 
-}
-.skills-container .about-box {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    margin-bottom: 1rem;
-    padding: 0.3rem;
 }
 
 .left-column {
     flex-basis: 45%; /* Stack columns vertically on small screens */
     padding-left: 1.5rem;
+    margin-top: 1.5rem;
     
 }
 .right-column {
