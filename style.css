@@ -358,9 +358,10 @@ nav.vertical-nav ul {
     border-radius: 7px;
     display: inline-block;
     background:#e6eeff6c;
-    margin: 1rem 0.4em;
+    margin: 0.5rem 0.4em;
     height: 412px;
     width: 22vw;
+    padding-bottom: 60%;
   }
     
   .skills-box img {
