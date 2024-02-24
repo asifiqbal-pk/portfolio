@@ -362,7 +362,12 @@ nav.vertical-nav ul {
     height: 412px;
     width: 22vw;
   }
-  
+    
+  .skills-box img {
+    height: 19%;
+    width: auto;
+  }
+
   .skills-box h5 {
     font-size: 1.2em;
     color:#3761b6;
