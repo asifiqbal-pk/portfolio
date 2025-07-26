@@ -1,22 +1,13 @@
-/* style.css */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    transition: background-color 0.5s, color 0.5s; /* Smooth theme transition */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  transition: background-color 0.5s, color 0.5s; /* Smooth theme transition */
+ 
 }
 
-body {
-    background-color: #f6f8fc; /* Light background for the main content area */
-    color: #333;
-}
-
-/* Sidebar Styles */
 .sidebar {
     position: fixed;
     display: flex;
@@ -32,7 +23,6 @@ body {
     top: 0;
     padding: 3% 1%;
     overflow-y: auto;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
 }
 
 #toggle-button {
@@ -45,14 +35,11 @@ body {
     background: #e1eaff; /* Light background for the button */
     text-align: left;
     font-size: large;
-    border-radius: 5px;
-    margin-bottom: 1rem;
 }
 
 #sidebar-content {
     display: block; /* Show by default */
     text-align: center;
-    width: 100%; /* Ensure content takes full width */
 }
 
 .sidebar img {
@@ -65,100 +52,88 @@ body {
 }
 
 .sidebar h3 {
-    color: #fff;
-    font-size: 1.15em;
-    font-weight: 550;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
+  color: #fff; font-size: 1.15em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
 }
 
 .sidebar p {
-    color: #fff;
-    font-size: 0.9em;
-    font-weight: 300;
-    line-height: 1.2em;
+  color: #fff; font-size: 0.9em; font-weight: 300; line-height: 1.2em;
 }
 
 .contacts {
-    width: 100%;
-    height: auto;
-    color: #ffffff;
-    text-align: left;
-    padding: 0px 12px;
-    z-index: 999;
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 12px;
+  z-index: 999;
 }
 
 .contacts p {
-    font-size: 12px;
-    color: #fff;
+  font-size: 12px;
+  color: #fff;
 }
-
+ 
 .contacts i {
-    margin-right: 0.5rem;
-    color: #fff;
-    padding-bottom: 0.4rem;
+  margin-right: 0.5rem;
+  color: #fff;
+  padding-bottom: 0.4rem;
 }
 
 .footer p {
-    position: relative;
-    font-size: 12px;
-    color: #fff;
-    padding: 1px 12px;
-    text-align: left;
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  padding: 1px 12px;
+  text-align: left;
 }
-
-/* Main Content Area */
+ 
 #main-heading {
-    text-align: center;
-    color: #3761b6;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.2rem;
-    margin-bottom: 3rem;
-    margin-left: 21%; /* Adjust for sidebar width */
-    padding-top: 60px;
+  text-align: center;
+  color: #3761b6;
+  font-size:1.8em;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2rem;
+  margin-bottom: 3rem;
+  margin-left: 21%;
+  padding-top: 60px;
 }
 
 #main-content {
-    margin-left: 21%; /* Adjust for sidebar width */
-    padding: 5px 40px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; /* Ensure content stacks vertically */
+  margin-left: 21%;
+  padding: 5px 40px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* Container for general content */
 .container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
 }
 
-/* Columns for Experience/Skills/etc. */
 .left-column {
-    width: 45%;
-    padding-left: 2rem;
-    padding-right: 0.5rem;
+  width: 45%;
+  padding-left: 2rem;  padding-right: 0.5rem;
 }
 
 .right-column {
-    width: 55%;
-    padding-right: 1rem;
+  width: 55%;
+  padding-right: 1rem;
 }
 
 /* =====================================================
-            VERTICAL NAVIGATION
-====================================================== */
+            VERTICAL NAVIGATION 
+======================================================  */
 nav.vertical-nav ul {
     list-style-type: none;
     font-size: 0.8em;
     text-align: left;
     font-weight: 400;
-}
-
-.nav-icon {
+  }
+  
+  .nav-icon {
     font-size: 1.2em;
     color: #3761b6;
     vertical-align: middle;
@@ -166,9 +141,9 @@ nav.vertical-nav ul {
     padding-top: 1px;
     padding-bottom: 1px;
     margin-right: 11%;
-}
-
-nav.vertical-nav a {
+  }
+  
+  nav.vertical-nav a {
     text-decoration: none;
     color: #fff;
     display: block; /* makes the entire area clickable */
@@ -182,10 +157,10 @@ nav.vertical-nav a {
     border-left: 0px solid #fff;
     position: relative;
     z-index: 1;
-}
-
-nav.vertical-nav a:focus,
-nav.vertical-nav a:hover {
+  }
+  
+  nav.vertical-nav a:focus,
+  nav.vertical-nav a:hover{
     color: #3761b6;
     font-style: italic;
     -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.2);
@@ -194,9 +169,9 @@ nav.vertical-nav a:hover {
     opacity: 1;
     padding-left: 17px;
     margin-right: 7%;
-}
-
-nav.vertical-nav a:before {
+  }  
+  
+  nav.vertical-nav a:before{
     content: "";
     background:#fff;
     width: 36px;
@@ -207,145 +182,25 @@ nav.vertical-nav a:before {
     left: 0;
     z-index: -1;
     transition: all 0.4s ease;
-}
-nav.vertical-nav a:focus:before,
-nav.vertical-nav a:hover:before {
+  }
+  nav.vertical-nav a:focus:before,
+  nav.vertical-nav a:hover:before{
     background:#fff;
     width: 100%;
-}
+  }
+  
+  nav.vertical-nav a:focus:after,
+  nav.vertical-nav a:hover:after{ right: 5px; }
 
-nav.vertical-nav a:focus:after,
-nav.vertical-nav a:hover:after {
-    right: 5px;
-}
 
-/* =====================================================
-            INDEX.HTML SPECIFIC STYLES
-====================================================== */
-.section-title {
-    text-align: center;
-    color: #3761b6;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1.2rem;
-    margin-bottom: 1.5rem;
-    padding-top: 30px;
-    border-bottom: 2px solid #e1eaff;
-    padding-bottom: 10px;
-}
-
-.content-paragraph {
-    padding: 0 5%;
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-
-.content-list {
-    padding-left: 7%;
-    padding-right: 5%;
-    margin-bottom: 1.5rem;
-    list-style-type: disc;
-}
-
-.content-list li {
-    font-size: 1em;
-    line-height: 1.6em;
-    margin-bottom: 0.5rem;
-}
-
-.sub-section-title {
-    color: #3761b6;
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    padding-left: 5%;
-}
-
-.table-container {
-    padding: 0 5%;
-    margin-bottom: 1.5rem;
-}
-
-.table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 1rem;
-}
-
-.table th, .table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-}
-
-.table th {
-    background-color: #e1eaff;
-    color: #3761b6;
-    font-weight: 600;
-}
-
-.table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-}
-
-.endorsement-item {
-    background-color: #e1eaff;
-    border-left: 5px solid #3761b6;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin: 1rem 5%;
-}
-
-.endorsement-quote {
-    font-style: italic;
-    margin-bottom: 0.5rem;
-    color: #4a4a4a;
-    font-size: 0.95em;
-}
-
-.endorsement-author {
-    text-align: right;
-    font-weight: 600;
-    color: #3761b6;
-    font-size: 0.9em;
-}
-
-.core-competency-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-    padding: 0 5%;
-    margin-bottom: 2rem;
-}
-
-.core-competency-item {
-    background-color: #e1eaff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    font-size: 0.95em;
-    line-height: 1.5;
-    text-align: center;
-}
-
-/* =====================================================
-            ABOUT BLOCK CSS (from index.html)
-====================================================== */
+/*==============================================
+     ABOUT BLOCK CSS
+================================================*/
 
 .about-container {
-    padding: 3% 4% 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem; /* Space between boxes */
+  padding: 3% 4% 0%;
 }
-.about-box {
+  .about-box {
     overflow: hidden;
     text-align:center;
     Border: solid 1px #3761b6;
@@ -354,260 +209,243 @@ nav.vertical-nav a:hover:after {
     padding: 0.3rem;
     background:#f6f8fc;
     margin: 0.7rem 0.3rem;
-    width: 11vw; /* Responsive width */
-    min-width: 150px; /* Minimum width to prevent squishing */
+    width: 11vw;
     min-height: 192px;
     vertical-align: top;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex-grow: 1; /* Allow boxes to grow */
-}
-
-.about-box h5 {
+  }
+  
+  .about-box h5 {
     font-size: 1rem;
     font-weight: 600;
     color:#3761b6;
     text-transform: uppercase;
     padding-bottom: 0.4rem;
     padding-top: 0.4rem;
-}
-
-.about-box p {
+  }
+  
+  .about-box p {
     font-size: 0.85rem;
     font-weight: 500;
     text-align:center;
     line-height: 1.2rem;
-}
-
-.about-box i {
+  }
+  
+  .about-box i {
     font-size: 2rem;
     text-align:center;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    color: mediumseagreen;
-}
-
-/* =====================================================
-            RESUME BLOCK CSS (from experience.html)
-====================================================== */
-
-.resume .container {
-    width: fit-content;
-    align-items: flex-start;
-}
-
-.resume .resume-item::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
-    left: -6px;
-    top: 3px;
-    background-color:mediumseagreen;
-    border: 2px solid #000;
-}
-
-.resume .resume-item {
-    padding: 0 0 10px 11px;
-    border-left: 2px solid #4a4a4a;
-    margin-top: 0px;
-    position: relative;
-    text-align: left;
-}
-
-.resume .resume-item h3 {
-    line-height: 1.2;
-    position: relative;
-    font-size: 1.0rem;
-    font-weight: 400;
-    color: #3761b6;
-    margin-bottom: 3px;
-    margin-top: 0px;
-}
-
-.resume .resume-item h4 {
-    line-height: 1;
-    position: relative;
-    font-size: 0.9rem;
-    font-weight: 550;
-    text-transform: uppercase;
-    color: #3761b6;
-    margin-bottom: 0.3rem;
-}
-
-.resume .resume-item h5 {
-    font-size: 0.9rem;
-    font-weight: 550;
-    text-transform: uppercase;
-    margin-bottom: 0.3rem;
-    color: #4a4a4a;
-}
-
-.resume .resume-item h6 {
-    line-height: 1.2;
-    position: relative;
-    font-size: 14px;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-    color:mediumseagreen;
-    text-transform: uppercase;
-}
-
-.resume .resume-item p {
-    line-height: 1.3;
-    position: relative;
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin-bottom: 9px;
-    color: #4a4a4a;
-}
-
-.resume .resume-item:last-child {
-    padding-bottom: 0;
-}
-
-.resume .Accomplishments::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    border-radius: 50px;
-    left: 0px;
-    top: 4px;
-    color: #3761b6;
-}
-
-.Accomplishments {
+  }
+  
+  /*==============================================
+         RESUME BLOCK CSS
+  ================================================*/
+    
+    .resume .container {
+      width: fit-content;
+      align-items: flex-start;
+    }
+    
+    .resume .resume-item::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50px;
+      left: -6px;
+      top: 3px;
+      background-color:mediumseagreen;
+      border: 2px solid #000;
+    }
+      
+    .resume .resume-item {
+      padding: 0 0 10px 11px;
+      border-left: 2px solid #4a4a4a;
+      margin-top: 0px;
+      position: relative;
+      text-align: left;
+    }
+    
+    .resume .resume-item h3 {
+      line-height: 1.2;
+      position: relative;
+      font-size: 1.0rem;
+      font-weight: 400;
+      color: #3761b6;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+    
+    .resume .resume-item h4 {
+      line-height: 1;
+      position: relative;
+      font-size: 0.9rem;
+      font-weight: 550;
+      text-transform: uppercase;
+      color: #3761b6;
+      margin-bottom: 0.3rem;
+    }
+    
+    .resume .resume-item h5 {
+      font-size: 0.9rem;
+      font-weight: 550;
+      text-transform: uppercase;
+      margin-bottom: 0.3rem;
+      color: #4a4a4a;
+    }
+  
+    .resume .resume-item h6 {
+      line-height: 1.2;
+      position: relative;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color:mediumseagreen;
+      text-transform: uppercase;
+    }
+    
+    .resume .resume-item p {
+      line-height: 1.3;
+      position: relative;
+      font-size: 0.8rem;
+      font-weight: 400;
+      margin-bottom: 9px;
+      color: #4a4a4a;
+    }
+  
+    .resume .resume-item:last-child {
+      padding-bottom: 0;
+    }
+    
+    .resume .Accomplishments::before{
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50px;
+      left: 0px;
+      top: 4px;
+      color: #3761b6;
+    }
+  
+    .Accomplishments{
     text-align: left;
     font-size: 13px;
     font-weight: 350;
-}
+    }
+    
+    .Accomplishments li{
+     padding-bottom: 2px;
+      border-left: 0px solid #080808;
+      margin-top: 0px;
+      text-align: left;
+    }
 
-.Accomplishments li {
-    padding-bottom: 2px;
-    border-left: 0px solid #080808;
-    margin-top: 0px;
-    text-align: left;
-}
+/*==============================================
+         SKILLS BLOCK CSS
+================================================*/
 
-/* =====================================================
-            SKILLS BLOCK CSS (from skills.html)
-====================================================== */
-
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
+  .skills-container{
+    display: block;
     justify-content: center;
-    gap: 1rem;
-    margin-left: 0; /* Adjust for main content margin */
-    padding: 0 20px;
-}
+    margin-left: 3rem;
+  }
 
-.skills-box {
+  .skills-box {
     overflow: hidden;
     text-align:center;
     Border: solid 1px #3761b6;
     border-radius: 7px;
+    display: inline-block;
     background:#e6eeff6c;
     margin: 0.5rem 0.4em;
-    height: auto; /* Adjusted to fit content */
-    width: 31%; /* Adjusted for responsiveness */
-    min-width: 280px; /* Minimum width to prevent squishing */
-    padding: 1.5rem; /* Added padding */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    flex-grow: 1;
-}
-
-.skills-box img {
-    height: 80px; /* Fixed height for icons */
+    height: 425px;
+    width: 31%;
+    padding-bottom: 43%;
+  }
+    
+  .skills-box img {
+    height: 19%;
     width: auto;
-    margin: 15px auto;
-}
+  }
 
-.skills-box h5 {
+  .skills-box h5 {
     font-size: 1.2em;
     color:#3761b6;
     font-weight: 600;
     text-transform: uppercase;
     padding-bottom: 1.2em;
     padding-top: 0.4rem;
-}
-
-.skills-box ul {
+  }
+  
+  .skills-box li {
     list-style-type: disc;
     text-align:left;
-    padding-left: 1.5rem; /* Indent list items */
-}
-
-.skills-box li {
     font-size: 0.9em;
     padding-bottom: 0.4rem;
     line-height: 1.1rem;
     color: #000000;
-}
-
-/* =====================================================
-            TESTIMONIALS BLOCK CSS (from testimonials.html)
-====================================================== */
+  }
+ 
+/*==============================================
+     TESTIMONOALS BLOCK CSS
+================================================*/
 
 .testimonial-content {
     padding: 1rem 5%; /* Adjusted for responsiveness */
     text-align: left;
     vertical-align: middle;
-    padding-left: 5rem;
-    padding-right: 5rem;
-}
-
-.testimonial-content h4 {
+    padding-left: 5rem 5%;
+    padding-right: 5rem 5%;
+  }
+  
+  .testimonial-content h4 {
     font-size: 1.4em; /* Adapted for better scaling across devices */
     font-weight: 600;
     text-transform: uppercase;
     margin-top: 0.5rem; /* Added spacing above */
     color: #2C4D91;
-}
-
-.testimonial-content span {
+  }
+  
+  .testimonial-content span {
     display: block; /* Ensure it appears on a new line */
     font-size: 0.9em;
     color: #000000;
     margin-bottom: 0.1rem; /* Added spacing below */
-}
-
-.testimonial-content p {
+  }
+  
+  .testimonial-content p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 0.9em;
     line-height: 1.5;
     color: #000;
     font-weight: normal;
     font-style: italic;
-}
-
-.stars-container {
+  }
+  
+  .stars-container {
     padding: 0 0;
-    color: mediumseagreen;
+    color:  mediumseagreen;
     font-size: 1.3em;
-}
-
-.owl-carousel .owl-nav .owl-prev,
-.owl-carousel .owl-nav .owl-next {
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
     position: absolute;
     color: #2C4D91 !important;
     top: 50%; /* Position from Top */
-    transform: translateY(-50%);
-}
-
-.owl-carousel .owl-nav .owl-prev {
-    left: -50px;
-}
-.owl-carousel .owl-nav .owl-next {
-    right: -50px;
-}
-
-/* Bottom indicators */
-.owl-carousel .owl-dots .owl-dot {
+  }
+  
+  .owl-carousel .owl-nav .owl-prev {
+    left: -50px;}
+  .owl-carousel .owl-nav .owl-next {
+    right: -50px;}
+  
+  /*   Bottom indicators */
+  .owl-carousel .owl-dots .owl-dot {
     border-radius: 2px;
-}
-.owl-dots {
+ }
+  .owl-dots {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -615,1078 +453,434 @@ nav.vertical-nav a:hover:after {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-}
-
-.owl-carousel .owl-dots .owl-dot {
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
     width: 0.5rem;
     height: 8px;
     margin: 2rem 0.2rem;
     background: #e6eeffce;
     border: solid 1px#2C4D91;
-}
-
-.owl-carousel .owl-dots .owl-dot:focus {
+  }
+  
+  .owl-carousel .owl-dots .owl-dot:focus {
     outline: none;
-}
-
-.owl-carousel .owl-dots .owl-dot.active {
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
     background: #2C4D91;
     width: 30px;
     height: 7px;
+  }
+
+/*==============================================
+     PORTFOLIO BLOCK CSS
+================================================*/
+
+#main-content {
+  margin-left: 21%;
+  padding: 0 12px;
 }
 
-/* =====================================================
-            PORTFOLIO BLOCK CSS (from portfolio.html)
-====================================================== */
-
 .static-content {
-    flex-grow: 1;
-    height: auto; /* Adjust based on your layout */
-    width: 100%;
+  flex-grow: 1;
+  height: auto; /* Adjust based on your layout */
+  width: 100%;
 }
 
 .portfolio-nav {
-    width: 100%; /* Use 100% width to fill the container */
-    background-color: #e1eaff;
-    padding: 0;
-    margin: 0;
+  width: 100%; /* Use 100% width to fill the container */
+  background-color: #e1eaff;
+  padding: 0;
+  margin: 0;
 }
 
 .portfolio-nav ul {
-    display: flex;
-    flex-direction: row; /* Adjust if needed to make sure it's in line */
-    justify-content: center; /* Center the navigation items */
-    flex-wrap: wrap; /* Allows items to wrap in small screens */
-    align-content: center;
-    padding: 0; /* Remove default ul padding */
+  display: flex;
+  flex-direction: row; /* Adjust if needed to make sure it's in line */
+  justify-content: center; /* Center the navigation items */
+  flex-wrap: wrap; /* Allows items to wrap in small screens */
+  align-content: center;
 }
 
 .portfolio-nav li {
-    list-style: none;
-    margin: 0.7rem;
+  text-decoration: none;
+  list-style: none;
+  margin:0.7rem;
 }
 
 .portfolio-nav li a {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center; /* Center items horizontally in the flex container */
-    justify-content: center; /* Center items vertically in the flex container */
-    text-decoration: none;
-    font-size: 13.5px;
-    line-height: 1.5rem;
-    color: #000000;
-    min-width: 8rem;
-    padding: 11px 11px;
-    background:#ffffff;
-    border-radius: 5px;
-    border: solid #e1eaff 2px;
-    box-shadow: 5px 5px 5px #a0bffd ;
-    transition: all 0.5s ease;
+  display: inline-flex;
+/*  flex-direction: column; /* Stack the icon and text vertically */
+  flex-wrap: wrap;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
+  text-decoration: none;
+  font-size: 13.5px;
+  line-height: 1.5rem;
+  color: #000000;
+  min-width: 8rem;
+  padding: 11px 11px;
+  background:#ffffff;
+  border-radius: 5px;
+  border: solid #e1eaff 2px;
+  box-shadow: 5px 5px 5px #a0bffd ;
+  transition: all 0.5s ease;
 }
 
-.portfolio-nav a:hover {
-    color: #3665c2;
-    background:#fff;
-    box-shadow: -3px -3px 5px rgba(255, 255, 255, 1), 5px 5px 5px #a0bffd ;
-    transform: translateY(-4px);
-    transition: transform 0.5s ease;
-    border: solid 2px #366ad1 ;
+.portfolio-nav a:hover{ 
+  color: #3665c2;
+  background:#fff;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 1), 5px 5px 5px #a0bffd ;
+  transform: translateY(-4px);
+  transition: transform 0.5s ease;
+  border: solid 2px  #366ad1 ; 
 }
 
 .portfolio-nav i {
-    font-size: 19px;
-    margin-right: 0.5rem;
+  font-size: 19px;
+  margin-right: 0.5rem;
 }
 
 .dynamic-content {
-    display: block;
-    flex-grow: 1;
-    overflow-y: auto; /* Makes this area scrollable */
-    width: 100%;
-    margin: 0;
+  display: block;
+  flex-grow: 1;
+  overflow-y: auto; /* Makes this area scrollable */
+  width: 100%;
+  margin: 0;
 }
 
 .content-section {
-    display: none; /* Hide all sections by default */
+  display: none; /* Hide all sections by default */
 }
 
-.content-section h2 {
-    text-align: center;
-    background-color: #e1eaff;
-    padding: 0.4rem;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+.content-section h2{
+  text-align: center;
+  background-color: #e1eaff;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 .content-section.active {
-    display: block; /* Only display the active section */
-    align-content: center;
+  display: block; /* Only display the active section */
+  align-content: center;
 }
 
 .video {
-    width: 100%; /* Adjust based on your design preference */
-    margin: 5px 5px; /* Adds space above and below, centers horizontally */
-    overflow: hidden; /* Prevents content from spilling out */
-    position: relative;
-    padding-top: 56.25%; /* Aspect ratio for 16:9 videos */
-    box-sizing:content-box; /* Ensures padding is included in the width */
+  width: 100%; /* Adjust based on your design preference */
+  margin: 5px 5px; /* Adds space above and below, centers horizontally */
+  overflow: hidden; /* Prevents content from spilling out */
+  position: relative;
+  padding-top: 56.25%; /* Aspect ratio for 16:9 videos */
+  box-sizing:content-box; /* Ensures padding is included in the width */
 }
 
 .video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 92%;
-    height: 92%;
-    align-items: center; /* Center items horizontally in the flex container */
-    justify-content: center; /* Center items vertically in the flex container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 92%;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 .video:hover {
-    transform: translateY(-5px);
-    transition: transform 0.5s ease;
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
 }
 
-.portfolio-wrapper .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* Adjust this as needed */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust this as needed */
 }
 
-.video-card {
-    margin: 5px;
-    width: 27rem;
+.video-card{
+  margin: 5px; 
+  width: 27rem;
 }
 
-.video-card .video:hover {
-    transform: translateY(-5px);
-    transition: transform 0.5s ease;
+.video.card:hover {
+transform: translateY(-5px);
+transition: transform 0.5s ease;
 }
 
 .video-card.card-body {
-    text-align: center;
+  text-align: center;
 }
 
 .card {
-    margin: 2vh 0;
-    width: 17rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added shadow for cards */
-    border-radius: 8px;
-    overflow: hidden;
+  margin: 2vh 0; 
+  width: 17rem;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    transition: transform 0.5s ease;
+transform: translateY(-5px);
+transition: transform 0.5s ease;
 }
 
 .card-body {
-    text-align: center;
-    color: #000;
-    font-size: 0.9em;
-    font-weight: 500;
-    padding: 1rem;
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    display: block;
+  text-align: center;
+  color: #000;
+  font-size: 0.9em;
+  font-weight: 500;
 }
 
 .btn-portfolio {
-    color: #366ad1;
-    background-color: transparent;
-    padding: 7px 7px;
-    text-decoration: none;
-    border: none;
-    border-bottom: solid #366ad1 2px;
-    margin-bottom: 5px;
-    display: inline-block; /* Make it behave like a button */
-    cursor: pointer;
-    font-weight: 500;
+  color: #366ad1;
+  background-color: transparent;
+  padding: 7px 7px;
+  text-decoration: none;
+  border: none;
+  border-bottom: solid #366ad1 2px;
+  margin-bottom: 5px;
 }
 
-.btn-portfolio:hover {
-    color: #fff;
-    background-color: #3761b6;
-    border-bottom-color: #3761b6;
+.btn-portfolio:hover{
+  color: #fff;
+  background-color: #3761b6;
 }
 
-/* =====================================================
-            Branding Portfolio CSS
-====================================================== */
+ 
+/*==============================================
+     Branding Portfolio  CSS
+================================================*/
 .branding-container {
-    display: flex;
-    flex-direction: column;
-    width:100%;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  text-align: left;
 }
 
 .branding-menu {
-    display: inline-flex;
-    flex-wrap: wrap;
-    align-items: center; /* Center items horizontally in the flex container */
-    justify-content: center; /* Center items vertically in the flex container */
-    margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
+  margin: 0;
 }
 
 .branding-content {
-    padding: 19px 0;
+  padding: 1px 0;
 }
 
 .tab-content {
-    align-items: center;
-    display: flex; /* Use flexbox for image layout within tabs */
-    flex-wrap: wrap;
-    justify-content: center;
+  align-items: center;
 }
 
 .branding-menu ul {
-    justify-content: center;
-    align-content: center;
-    padding: 17px 0px;
-    background: #3761b6 !important; /* Adjusted color for a softer look */
-    width: 100%; /* Ensure it spans full width */
+  justify-content: center;
+  align-content: center;
+  padding: 17px 0px;
+  background: #3761b6 !important; /* Adjusted color for a softer look */
 }
 
 .branding-menu ul a {
-    text-decoration: none;
-    padding: 11px 12px;
-    color: #333; /* Darker for better readability */
-    background: #fff; /* Softer background */
-    box-shadow: 2px 2px 5px #e0e0e0; /* Softer shadow */
-    border: 1px solid #ddd; /* Lighter border */
-    border-radius: 5px;
-    font-size: 0.9em; /* Slightly larger */
-    font-weight: 400; /* Lighter weight for a modern look */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
-    margin: 0.7rem;
-    margin-top: 0.1rem;
+  text-decoration: none;
+  padding: 11px 12px;
+  color: #333; /* Darker for better readability */
+  background: #fff; /* Softer background */
+  box-shadow: 2px 2px 5px #e0e0e0; /* Softer shadow */
+  border: 1px solid #ddd; /* Lighter border */
+  border-radius: 5px;
+  font-size: 0.9em; /* Slightly larger */
+  font-weight: 400; /* Lighter weight for a modern look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
+  margin: 0.7rem;
+  margin-top: 0.1rem;
 }
 
 .branding-menu li {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .branding-menu a.active {
-    color: #fff !important;
-    background: #3761b6 !important; /* Adjusted color for a softer look */
-    box-shadow: 3px 3px 6px #fff;
+  color: #fff !important;
+  background: #3761b6 !important; /* Adjusted color for a softer look */
+  box-shadow: 3px 3px 6px #fff;
 }
 
 .branding-menu a:hover {
-    color: #fff;
-    background: #5a7dbc; /* Adjusted color for a softer look */
-    box-shadow: 3px 3px 6px #fff;
+  color: #fff;
+  background: #5a7dbc; /* Adjusted color for a softer look */
+  box-shadow: 3px 3px 6px #fff;
 }
 
 .tab-content img {
-    max-width: 63%; /* Ensure responsiveness */
-    max-height: 50vh; /* Maintain aspect ratio */
-    margin: 0.75rem;
-    box-shadow: 1px 1px 3px #f1f1f1;
-    border-radius: 4px;
+  max-width: 63%; /* Ensure responsiveness */
+  max-height: 50vh; /* Maintain aspect ratio */
+  margin: 0.75rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
 }
 
 .portfolio-branding {
-    display: flex;
-    flex-direction: column; /* Changed to column for better stacking */
-    box-shadow: 2px 2px 5px #b2c9f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    margin: 1rem;
-    max-width: 40%; /* Ensure responsiveness */
-    flex-grow: 1; /* Allow items to grow */
-    justify-content: center;
-    align-items: center; /* Center content within the card */
-    padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
 }
 
 .portfolio-branding img {
-    width: 100%; /* Ensure image fills its container */
-    height: auto;
-    margin: 0; /* Remove extra margin */
-    border-radius: 4px;
-    margin-bottom: 1rem;
-}
-
-.portfolio-branding a {
-    text-decoration: none;
-    padding: 7px 10px;
-    font-size: 0.9em;
-    font-weight: 400;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    color: #366ad1;
-    background: #fff;
-    box-shadow: 2px 2px 5px #e0e0e0;
-    border: 1px solid #366ad1;
-    border-radius: 5px;
+  width: 40%; /* Ensure responsiveness */
+  max-height: 40vh; /* Maintain aspect ratio */
+  margin: 1rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
 }
 
 .marketing-branding {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 .marketing-branding img {
-    max-width: 40%; /* Ensure responsiveness */
-    max-height: 40vh; /* Maintain aspect ratio */
-    margin: 0.75rem;
-    box-shadow: 1px 1px 3px #f1f1f1;
-    border-radius: 4px;
+  max-width: 40%; /* Ensure responsiveness */
+  max-height: 40vh; /* Maintain aspect ratio */
+  margin: 0.75rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
 }
 
 .branding-box {
-    overflow-x: auto; /* Allows horizontal scrolling if content overflows */
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Allow images to wrap */
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 .branding-box p {
-    font-weight: 500; /* Adjusted for emphasis */
-    color: #000000; /* Softened color */
-    font-size: larger;
-    margin-top: 19px;
-    text-transform: uppercase;
-    padding-left: 1rem;
-    width: 100%; /* Make paragraph take full width */
-    text-align: center;
+  font-weight: 500; /* Adjusted for emphasis */
+  color: #000000; /* Softened color */
+  font-size: larger;
+  margin-top: 19px;
+  text-transform: uppercase;
+  padding-left: 1rem;
 }
 
 .branding-box img {
-    max-width: 30%; /* Ensure responsiveness */
-    max-height: 30vh; /* Maintain aspect ratio */
-    margin: 0.75rem; /* Increased spacing */
+  max-width: 30%; /* Ensure responsiveness */
+  max-height: 30vh; /* Maintain aspect ratio */
+  margin: 0.75rem; /* Increased spacing */
 }
 
+
 .logo-branding {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1rem;
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .logo-branding img {
-    margin: 0.9rem; /* Increased spacing */
-    width: 19%;
-    min-width: 100px; /* Minimum size for logos */
-    height: auto;
-    justify-content: center; /* Center items vertically in the flex container */
-    box-shadow: 2px 2px 5px #b2c9f8;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0.5rem; /* Increased spacing */
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  min-width: 15rem;
+  justify-content: center; /* Center items vertically in the flex container */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container-portfolio-branding {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
+.portfolio-branding {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px #b2c9f8;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 1rem;
+  max-width: 40%; /* Ensure responsiveness */
+  max-height: 63vh; /* Maintain aspect ratio */
+  justify-content: center;
+  }
+
+.portfolio-branding img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.portfolio-branding a {
+  text-decoration: none;
+  padding: 7px 10px;
+  font-size: 0.9em;
+  font-weight: 400; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  color: #366ad1; 
+  background: #fff; 
+  box-shadow: 2px 2px 5px #e0e0e0;
+  border: 1px solid #366ad1;
+  border-radius: 5px;
+}
+
+.marketing-branding {
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
+}
 
 /* Modal CSS */
+/* The Modal (background) */
 .modal {
-    position: fixed; /* Use fixed positioning */
-    padding: 3rem; /* Location of the box */
-    display: none; /* Hidden by default */
-    top: 0;
-    left: 0;
-    width: 100vw; /* Cover the full viewport width */
-    height: 100vh; /* Cover the full viewport height */
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    vertical-align: middle;
-    z-index: 1005; /* Ensure it's above other content */
-    background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
+  position: fixed; /* Use fixed positioning */
+  padding: 3rem; /* Location of the box */
+  display: none; /* Hidden by default */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Cover the full viewport width */
+  height: 100vh; /* Cover the full viewport height */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  vertical-align: middle;
+  z-index: 1005; /* Ensure it's above other content */
+  background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
 }
 
+/* Modal Content (Image) */
 .modal-content {
-    max-width: 92%; /* Maximum width is the container's width */
-    max-height: 92vh; /* Do not exceed the viewport's height */
-    object-fit: contain; /* Preserve aspect ratio while fitting in the container */
+  max-width: 92%; /* Maximum width is the container's width */
+  max-height: 92vh; /* Do not exceed the viewport's height */
+  object-fit: contain; /* Preserve aspect ratio while fitting in the container */
+  justify-content: center; /* Center horizontally */
+  vertical-align: middle;
 }
 
+/* Caption of Modal Image */
 #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
 }
 
+/* The Close Button */
 .close {
-    position: absolute;
-    top: 12px;
-    right: 40px;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight:500;
-    transition: 0.5s;
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight:500;
+  transition: 0.5s;
 }
 
 .close:hover,
 .close:focus {
-    color: #e0e0e0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* =====================================================
-            RESPONSIVE CSS
-====================================================== */
-@media (max-width: 600px) {
-    .sidebar {
-        width: 45px; /* Minimized width on small screens */
-    }
-
-    .sidebar.active {
-        width: 263px; /* Expand when active */
-    }
-
-    #toggle-button {
-        display: block; /* Show toggle button on small screens */
-    }
-
-    #sidebar-content {
-        display: none; /* Hide content by default on small screens */
-    }
-
-    .sidebar.active #sidebar-content {
-        display: block; /* Show content when sidebar is active */
-    }
-
-    .sidebar img {
-        width: 33%; /* Adjust image size */
-        height: auto;
-        margin: 10px 10%; /* Center the image */
-        border: 2px solid #fff;
-        border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
-        margin-bottom: 1rem;
-    }
-
-    .sidebar h3 {
-        padding-bottom: 0.1rem;
-    }
-
-    .sidebar p {
-        font-size: 0.8em;
-        font-weight: 300;
-        line-height: 1.5em;
-        padding: 0 10px;
-    }
-    .contacts {
-        width: 100%;
-        height: auto;
-        text-align: left;
-        padding: 0px 12px;
-        z-index: 999;
-    }
-
-    .contacts p {
-        font-size: 13px;
-    }
-
-    .contacts i {
-        margin-right: 0.5rem;
-        font-size: 13px;
-        padding-bottom: 0.4rem;
-    }
-
-    .footer p {
-        position: relative;
-        font-size: 12px;
-        padding: 5px 12px;
-        text-align: left;
-    }
-
-    #main-content {
-        margin-left: 40px; /* Adjust for minimized sidebar */
-        margin-right: 10px; /* Adjust for minimized sidebar */
-        padding-left: 1rem;
-        padding-right: 0.5rem;
-        align-items: center;
-        font-size: 0.9em;
-    }
-
-
-    #main-heading {
-        font-size:1.6em;
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 1.7rem;
-        margin-bottom: 0.5rem;
-        margin-left: 30px;
-        padding: 10px 10px;
-    }
-
-    .about-container {
-        padding: 2% 3%;
-    }
-    .about-box {
-        padding: 0.35rem;
-        margin-right: 0.1em;
-        margin-left: 0.3em;
-        height: 19vh;
-        width: 45%;
-    }
-
-    .about-box h5 {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-
-    .about-box p {
-        font-size: 0.8rem;
-        line-height: 1.4;
-        font-weight: 500;
-    }
-
-    .about-box i {
-        font-size: 1.7rem;
-    }
-    .skills-container {
-        display: block;
-        margin-left: 4rem;
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        font-size: 0.9em;
-        padding: 0;
-        margin: 0;
-    }
-
-    .skills-container .skills-box {
-        width: 72%;
-        margin-bottom: 2rem;
-        margin-left: 4rem;
-        height: auto;
-        padding: 0.7rem;
-    }
-
-    .skills-box h5 {
-        font-size: 1.8em;
-        font-weight: 700;
-        padding-bottom: 1.2em;
-        padding-top: 0.4rem;
-    }
-
-    .skills-box li {
-        font-size: 1.1em;
-        padding-bottom: 0.5rem;
-    }
-
-    .left-column {
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        padding-left: 1.5rem;
-    }
-    .right-column {
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        padding: 0;
-        margin-top: 2.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1rem;
-    }
-
-    /* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
-
-    .testimonial-content h4 {
-        font-size: 1.2em; /* Adapted for better scaling across devices */
-    }
-
-    .testimonial-content span {
-        font-size: 1em;
-    }
-
-    .testimonial-content p {
-        font-size: 1em;
-    }
-
-    .owl-carousel .owl-nav .owl-prev {
-        display: none;
-    }
-    .owl-carousel .owl-nav .owl-next {
-        display:none;
-    }
-
-    .owl-carousel .owl-nav .owl-dot {
-        display: block;
-    }
-
-
-    /*-----------Portfolio SECTION----------*/
-
-    .portfolio-nav ul {
-        padding: 0.4rem 0;
-    }
-
-    .portfolio-nav li {
-        margin: 0.2rem;
-    }
-
-    .portfolio-nav li a {
-        flex-direction: column; /* Stack the icon and text vertically */
-        font-size: 11px;
-        line-height: 1rem;
-        width: 5rem;
-        min-height: 8vh;
-        text-wrap: wrap;
-        padding: 7px 10px;
-        text-align: center;
-        line-height: 1.2;
-    }
-
-    .portfolio-nav i {
-        font-size: 15px;
-        margin-bottom: 0.4rem;
-    }
-
-    .content-section h2 {
-        padding: 0.4rem;
-        margin-bottom: 0.7rem;
-        font-size: 1.1rem;
-    }
-
-    .video {
-        width: 92%; /* Adjust based on your design preference */
-    }
-
-    .video iframe {
-        margin-left: 1rem;
-    }
-
-    .card-body {
-        font-size: 0.8em;
-    }
-
-    /* ------------- Branding Portfolio CSS --------------*/
-
-    .branding-content {
-        padding: 15px 10px;
-    }
-
-    .branding-menu ul {
-        padding: 5px 5px;
-    }
-
-    .branding-menu ul a {
-        font-size: 0.8em;
-        font-weight: 300;
-        margin: 0.3rem;
-        width: 5.5rem;
-        padding: 0.4rem;
-        text-align: center;
-        text-wrap: wrap;
-    }
-
-    .branding-menu li {
-        margin-bottom: 0.4rem;
-    }
-
-    .branding-box img {
-        max-height: 20vh;
-        width:fit-content;
-        margin: 0.5rem; /* Increased spacing */
-    }
-
-    .logo-branding img {
-        margin: 0.9rem; /* Increased spacing */
-        width: 25%; /* Ensure responsiveness */
-        height: auto;
-    }
-}
-
-/* ============ width upto 800 with Toggle =====*/
-@media only screen and (min-width: 601px) and (max-width: 800px) {
-    .sidebar {
-        width: 50px; /* Minimized width on small screens */
-    }
-
-    .sidebar.active {
-        width: 272px; /* Expand when active */
-    }
-
-    #toggle-button {
-        display: block; /* Show toggle button on small screens */
-    }
-
-    #sidebar-content {
-        display: none; /* Hide content by default on small screens */
-    }
-
-    .sidebar.active #sidebar-content {
-        display: block; /* Show content when sidebar is active */
-    }
-
-    .sidebar img {
-        width: 30%; /* Adjust image size */
-        height: auto;
-        margin: 10px 10%; /* Center the image */
-        border: 2px solid #fff;
-        border-radius: 50%; /* This makes the image circular, similar to what 'rounded-circle' class would do */
-        margin-bottom: 1rem;
-    }
-
-    .sidebar h3 {
-        padding-bottom: 0.5rem;
-    }
-
-    .sidebar p {
-        font-size: 0.9em;
-        font-weight: 300;
-        line-height: 1.3em;
-        padding: 0 10px;
-    }
-    .contacts {
-        width: 100%;
-        height: auto;
-        color: #ffffff;
-        text-align: left;
-        padding: 0px 12px;
-        z-index: 999;
-    }
-
-    .contacts p {
-        font-size: 12px;
-        color: #fff;
-    }
-
-    .contacts i {
-        margin-right: 7px;
-        color: #fff;
-        padding-bottom: 0.5rem;
-    }
-
-    .footer p {
-        position: relative;
-        font-size: 10px;
-        color: #fff;
-        padding: 5px 12px;
-        text-align: left;
-    }
-
-    #main-content {
-        margin-left: 30px; /* Adjust for minimized sidebar */
-        margin-right: 0px; /* Adjust for minimized sidebar */
-        padding-left: 1.5rem;
-        padding-right: 0.5rem;
-        align-items: center;
-    }
-
-
-    #main-heading {
-        font-size:1.6em;
-        text-transform: uppercase;
-        font-weight: 600;
-        line-height: 1.7rem;
-        margin-bottom: 0rem;
-        margin-left: 30px;
-        padding: 10px 10px;
-    }
-
-    .about-container {
-        padding: 2% 3%;
-    }
-    .about-box {
-        padding: 0.5rem;
-        margin-right: 0.3em;
-        margin-left: 0.4em;
-        height: 17vh;
-        width: 30%;
-    }
-
-    .about-box h5 {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-
-    .about-box p {
-        font-size: 0.8rem;
-        line-height: 1.4;
-        font-weight: 500;
-    }
-
-    .about-box i {
-        font-size: 1.7rem;
-    }
-
-
-    .skills-container {
-        display: block;
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        font-size: 1em;
-        padding: 0;
-        margin: 0;
-    }
-
-    .skills-box {
-        width: 72%;
-        margin-bottom: 1.5rem;
-        margin-left: 5rem;
-        height: auto;
-        padding: 5%;
-        vertical-align: top;
-        height: 50%;
-    }
-
-
-    .left-column {
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        padding-left: 1.5rem;
-    }
-    .right-column {
-        flex-basis: 100%; /* Stack columns vertically on small screens */
-        padding: 0;
-        margin-top: 2.5rem;
-        padding-left: 1.5rem;
-        padding-right: 1rem;
-    }
-
-    /* -------------------- TESTIMONOALS BLOCK CSS -----------------*/
-
-    .testimonial-content h4 {
-        font-size: 1.2em; /* Adapted for better scaling across devices */
-    }
-
-    .testimonial-content span {
-        font-size: 0.8em;
-    }
-
-    .testimonial-content p {
-        font-size: 0.8em;
-    }
-
-    .owl-carousel .owl-nav .owl-prev {
-        display: none;
-    }
-    .owl-carousel .owl-nav .owl-next {
-        display:none;
-    }
-
-    .owl-carousel .owl-nav .owl-dot {
-        display: block;
-    }
-
-
-    /*-----------Portfolio SECTION----------*/
-
-    .portfolio-nav ul {
-        padding: 0.4rem 0;
-    }
-
-    .portfolio-nav li {
-        margin: 0.4rem;
-    }
-
-    .portfolio-nav li a {
-        flex-direction: column; /* Stack the icon and text vertically */
-        font-size: 12px;
-        line-height: 1rem;
-        min-width: 7rem;
-        height: 6.5vh;
-        text-wrap: wrap;
-        padding: 3px 0;
-        text-align: center;
-    }
-
-    .portfolio-nav i {
-        font-size: 15px;
-        margin-bottom: 0.4rem;
-    }
-
-    .content-section h2 {
-        padding: 0.5rem;
-        font-size: 1.3rem;
-    }
-
-
-    /* ------------- Branding Portfolio CSS --------------*/
-
-    .branding-content {
-        padding: 10px 5px;
-    }
-
-    .branding-menu ul {
-        padding: 10px 5px;
-    }
-
-    .branding-menu ul a {
-        font-size: 0.85em;
-        font-weight: 400;
-        margin:0 0.7rem;
-        width: 6.5rem;
-        min-height: 3.5rem;
-        padding: 0.4rem 0.7rem;
-        text-align: center;
-        text-wrap: wrap;
-    }
-
-    .branding-menu li {
-        margin-bottom: 0.2rem;
-    }
-
-    .branding-box img {
-        max-height: 20vh;
-        width:fit-content;
-        margin: 0.5rem; /* Increased spacing */
-    }
-
-    .logo-branding img {
-        margin: 0.9rem; /* Increased spacing */
-        width: 25%; /* Ensure responsiveness */
-        height: 25%;
-    }
-}
-
-/* Default styles for larger screens (>= 991px) */
-@media only screen and (min-width: 991px) {
-    .sidebar {
-        width: 21%; /* Default width */
-        padding: 3% 1%;
-    }
-
-    #toggle-button {
-        display: none; /* Hide on larger screens */
-    }
-
-    #sidebar-content {
-        display: block; /* Always show content on larger screens */
-    }
-
-    .sidebar img {
-        height: 17vh;
-        width: auto;
-        margin: 1px 10%;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        margin-bottom: 1.5rem;
-    }
-
-    .sidebar h3 {
-        font-size: 1.15em;
-        font-weight: 550;
-        padding-bottom: 0.5rem;
-    }
-
-    .sidebar p {
-        font-size: 0.9em;
-        font-weight: 300;
-        line-height: 1.2em;
-        padding: 0 10px;
-    }
-
-    .contacts {
-        width: 100%;
-        height: auto;
-        padding: 0px 12px;
-    }
-
-    .contacts p {
-        font-size: 12px;
-    }
-
-    .contacts i {
-        margin-right: 0.5rem;
-        padding-bottom: 0.4rem;
-    }
-
-    .footer p {
-        font-size: 12px;
-        padding: 1px 12px;
-    }
-
-    #main-content {
-        margin-left: 21%;
-        padding: 5px 40px;
-    }
-
-    #main-heading {
-        font-size: 1.8em;
-        margin-bottom: 3rem;
-        margin-left: 21%;
-        padding-top: 60px;
-    }
-
-    .about-box {
-        width: 11vw;
-        min-height: 192px;
-    }
-
-    .skills-box {
-        width: 31%;
-        height: 425px;
-    }
-
-    .left-column {
-        width: 45%;
-        padding-left: 2rem;
-        padding-right: 0.5rem;
-    }
-
-    .right-column {
-        width: 55%;
-        padding-right: 1rem;
-    }
-
-    .testimonial-content {
-        padding: 1rem 5%;
-        padding-left: 5rem 5%;
-        padding-right: 5rem 5%;
-    }
-
-    .owl-carousel .owl-nav .owl-prev {
-        left: -50px;
-        display: block; /* Show on larger screens */
-    }
-    .owl-carousel .owl-nav .owl-next {
-        right: -50px;
-        display: block; /* Show on larger screens */
-    }
-    .owl-carousel .owl-dots .owl-dot {
-        display: block; /* Show on larger screens */
-    }
-
-    .portfolio-nav li a {
-        flex-direction: row; /* Keep icon and text inline */
-        font-size: 13.5px;
-        line-height: 1.5rem;
-        min-width: 8rem;
-        padding: 11px 11px;
-    }
-
-    .portfolio-nav i {
-        font-size: 19px;
-        margin-right: 0.5rem;
-    }
-
-    .content-section h2 {
-        font-size: 1.5rem;
-    }
-    .video iframe {
-        width: 92%;
-        height: 92%;
-    }
-    .branding-menu ul a {
-        font-size: 0.9em;
-        margin: 0.7rem;
-        margin-top: 0.1rem;
-    }
-    .branding-box img {
-        max-width: 30%;
-        max-height: 30vh;
-        margin: 0.75rem;
-    }
-    .logo-branding img {
-        width: 19%;
-    }
+  color: #e0e0e0;
+  text-decoration: none;
+  cursor: pointer;
 }
