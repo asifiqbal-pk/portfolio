@@ -35,8 +35,6 @@
     background: #e1eaff; /* Light background for the button */
     text-align: left;
     font-size: large;
-    border-radius: 5px;
-    margin-bottom: 1rem;
 }
 
 #sidebar-content {
@@ -45,7 +43,7 @@
 }
 
 .sidebar img {
-    height: 17vh;
+    height: 15vh;
     width: auto; /* Adjust image size */
     margin: 1px 10%; /* Center the image */
     border: 2px solid #fff;
@@ -54,21 +52,20 @@
 }
 
 .sidebar h3 {
-    color: #fff;
-    font-size: 1.15em;
-    font-weight: 550;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
+  color: #fff; font-size: 1.12em; font-weight: 550; text-transform: uppercase; padding-bottom: 0.5rem;
 }
 
 .sidebar p {
-    color: #fff;
-    font-size: 0.9em;
-    font-weight: 300;
-    line-height: 1.2em;
+  color: #fff; font-size: 0.8em; font-weight: 300; line-height: 1.2em;
 }
 
 .contacts {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  text-align: left;
+  padding: 0px 12px;
+  z-index: 999;
   width: 100%;
   height: auto;
   color: #ffffff;
@@ -80,15 +77,26 @@
 .contacts p {
   font-size: 12px;
   color: #fff;
+  font-size: 12px;
+  color: #fff;
 }
  
+ 
 .contacts i {
+  margin-right: 0.5rem;
+  color: #fff;
+  padding-bottom: 0.4rem;
   margin-right: 0.5rem;
   color: #fff;
   padding-bottom: 0.4rem;
 }
 
 .footer p {
+  position: relative;
+  font-size: 12px;
+  color: #fff;
+  padding: 1px 12px;
+  text-align: left;
   position: relative;
   font-size: 12px;
   color: #fff;
@@ -121,6 +129,10 @@
   flex-direction: row;
   width: 100%;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0;
 }
 
 .left-column {
@@ -131,9 +143,13 @@
 .right-column {
   width: 55%;
   padding-right: 1rem;
+  width: 55%;
+  padding-right: 1rem;
 }
 
 /* =====================================================
+            VERTICAL NAVIGATION 
+======================================================  */
             VERTICAL NAVIGATION 
 ======================================================  */
 nav.vertical-nav ul {
@@ -144,6 +160,9 @@ nav.vertical-nav ul {
   }
   
   .nav-icon {
+  }
+  
+  .nav-icon {
     font-size: 1.2em;
     color: #3761b6;
     vertical-align: middle;
@@ -151,6 +170,9 @@ nav.vertical-nav ul {
     padding-top: 1px;
     padding-bottom: 1px;
     margin-right: 11%;
+  }
+  
+  nav.vertical-nav a {
   }
   
   nav.vertical-nav a {
@@ -171,6 +193,10 @@ nav.vertical-nav ul {
   
   nav.vertical-nav a:focus,
   nav.vertical-nav a:hover{
+  }
+  
+  nav.vertical-nav a:focus,
+  nav.vertical-nav a:hover{
     color: #3761b6;
     font-style: italic;
     -webkit-box-shadow: 0px 0px 4px rgba(0,0,0,.2);
@@ -179,6 +205,9 @@ nav.vertical-nav ul {
     opacity: 1;
     padding-left: 17px;
     margin-right: 7%;
+  }  
+  
+  nav.vertical-nav a:before{
   }  
   
   nav.vertical-nav a:before{
@@ -195,8 +224,20 @@ nav.vertical-nav ul {
   }
   nav.vertical-nav a:focus:before,
   nav.vertical-nav a:hover:before{
+  }
+  nav.vertical-nav a:focus:before,
+  nav.vertical-nav a:hover:before{
     background:#fff;
     width: 100%;
+  }
+  
+  nav.vertical-nav a:focus:after,
+  nav.vertical-nav a:hover:after{ right: 5px; }
+
+
+/*==============================================
+     ABOUT BLOCK CSS
+================================================*/
   }
   
   nav.vertical-nav a:focus:after,
@@ -210,6 +251,7 @@ nav.vertical-nav ul {
 .about-container {
   padding: 3% 4% 0%;
 }
+  .about-box {
   .about-box {
     overflow: hidden;
     text-align:center;
@@ -225,6 +267,9 @@ nav.vertical-nav ul {
   }
   
   .about-box h5 {
+  }
+  
+  .about-box h5 {
     font-size: 1rem;
     font-weight: 600;
     color:#3761b6;
@@ -234,10 +279,16 @@ nav.vertical-nav ul {
   }
   
   .about-box p {
+  }
+  
+  .about-box p {
     font-size: 0.85rem;
     font-weight: 500;
     text-align:center;
     line-height: 1.2rem;
+  }
+  
+  .about-box i {
   }
   
   .about-box i {
@@ -350,22 +401,39 @@ nav.vertical-nav ul {
       margin-top: 0px;
       text-align: left;
     }
+    }
+    
+    .Accomplishments li{
+     padding-bottom: 2px;
+      border-left: 0px solid #080808;
+      margin-top: 0px;
+      text-align: left;
+    }
 
+/*==============================================
+         SKILLS BLOCK CSS
+================================================*/
 /*==============================================
          SKILLS BLOCK CSS
 ================================================*/
 
   .skills-container{
     display: block;
+  .skills-container{
+    display: block;
     justify-content: center;
     margin-left: 3rem;
   }
+    margin-left: 3rem;
+  }
 
+  .skills-box {
   .skills-box {
     overflow: hidden;
     text-align:center;
     Border: solid 1px #3761b6;
     border-radius: 7px;
+    display: inline-block;
     display: inline-block;
     background:#e6eeff6c;
     margin: 0.5rem 0.4em;
@@ -376,9 +444,18 @@ nav.vertical-nav ul {
     
   .skills-box img {
     height: 19%;
+    height: 425px;
+    width: 31%;
+    padding-bottom: 43%;
+  }
+    
+  .skills-box img {
+    height: 19%;
     width: auto;
   }
+  }
 
+  .skills-box h5 {
   .skills-box h5 {
     font-size: 1.2em;
     color:#3761b6;
@@ -389,12 +466,20 @@ nav.vertical-nav ul {
   }
   
   .skills-box li {
+  }
+  
+  .skills-box li {
     list-style-type: disc;
     text-align:left;
     font-size: 0.9em;
     padding-bottom: 0.4rem;
     line-height: 1.1rem;
     color: #000000;
+  }
+ 
+/*==============================================
+     TESTIMONOALS BLOCK CSS
+================================================*/
   }
  
 /*==============================================
@@ -410,6 +495,11 @@ nav.vertical-nav ul {
   }
   
   .testimonial-content h4 {
+    padding-left: 5rem 5%;
+    padding-right: 5rem 5%;
+  }
+  
+  .testimonial-content h4 {
     font-size: 1.4em; /* Adapted for better scaling across devices */
     font-weight: 600;
     text-transform: uppercase;
@@ -418,10 +508,16 @@ nav.vertical-nav ul {
   }
   
   .testimonial-content span {
+  }
+  
+  .testimonial-content span {
     display: block; /* Ensure it appears on a new line */
     font-size: 0.9em;
     color: #000000;
     margin-bottom: 0.1rem; /* Added spacing below */
+  }
+  
+  .testimonial-content p {
   }
   
   .testimonial-content p {
@@ -434,9 +530,17 @@ nav.vertical-nav ul {
   }
   
   .stars-container {
+  }
+  
+  .stars-container {
     padding: 0 0;
     color:  mediumseagreen;
+    color:  mediumseagreen;
     font-size: 1.3em;
+  }
+  
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next {
   }
   
   .owl-carousel .owl-nav .owl-prev,
@@ -453,7 +557,18 @@ nav.vertical-nav ul {
   
   /*   Bottom indicators */
   .owl-carousel .owl-dots .owl-dot {
+  }
+  
+  .owl-carousel .owl-nav .owl-prev {
+    left: -50px;}
+  .owl-carousel .owl-nav .owl-next {
+    right: -50px;}
+  
+  /*   Bottom indicators */
+  .owl-carousel .owl-dots .owl-dot {
     border-radius: 2px;
+ }
+  .owl-dots {
  }
   .owl-dots {
     display: -webkit-box;
@@ -466,6 +581,9 @@ nav.vertical-nav ul {
   }
   
   .owl-carousel .owl-dots .owl-dot {
+  }
+  
+  .owl-carousel .owl-dots .owl-dot {
     width: 0.5rem;
     height: 8px;
     margin: 2rem 0.2rem;
@@ -474,7 +592,13 @@ nav.vertical-nav ul {
   }
   
   .owl-carousel .owl-dots .owl-dot:focus {
+  }
+  
+  .owl-carousel .owl-dots .owl-dot:focus {
     outline: none;
+  }
+  
+  .owl-carousel .owl-dots .owl-dot.active {
   }
   
   .owl-carousel .owl-dots .owl-dot.active {
@@ -482,7 +606,16 @@ nav.vertical-nav ul {
     width: 30px;
     height: 7px;
   }
+  }
 
+/*==============================================
+     PORTFOLIO BLOCK CSS
+================================================*/
+
+#main-content {
+  margin-left: 21%;
+  padding: 0 12px;
+}
 /*==============================================
      PORTFOLIO BLOCK CSS
 ================================================*/
@@ -496,9 +629,16 @@ nav.vertical-nav ul {
   flex-grow: 1;
   height: auto; /* Adjust based on your layout */
   width: 100%;
+  flex-grow: 1;
+  height: auto; /* Adjust based on your layout */
+  width: 100%;
 }
 
 .portfolio-nav {
+  width: 100%; /* Use 100% width to fill the container */
+  background-color: #e1eaff;
+  padding: 0;
+  margin: 0;
   width: 100%; /* Use 100% width to fill the container */
   background-color: #e1eaff;
   padding: 0;
@@ -511,15 +651,39 @@ nav.vertical-nav ul {
   justify-content: center; /* Center the navigation items */
   flex-wrap: wrap; /* Allows items to wrap in small screens */
   align-content: center;
+  display: flex;
+  flex-direction: row; /* Adjust if needed to make sure it's in line */
+  justify-content: center; /* Center the navigation items */
+  flex-wrap: wrap; /* Allows items to wrap in small screens */
+  align-content: center;
 }
 
 .portfolio-nav li {
   text-decoration: none;
   list-style: none;
   margin:0.7rem;
+  text-decoration: none;
+  list-style: none;
+  margin:0.7rem;
 }
 
 .portfolio-nav li a {
+  display: inline-flex;
+/*  flex-direction: column; /* Stack the icon and text vertically */
+  flex-wrap: wrap;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
+  text-decoration: none;
+  font-size: 13.5px;
+  line-height: 1.5rem;
+  color: #000000;
+  min-width: 8rem;
+  padding: 11px 11px;
+  background:#ffffff;
+  border-radius: 5px;
+  border: solid #e1eaff 2px;
+  box-shadow: 5px 5px 5px #a0bffd ;
+  transition: all 0.5s ease;
   display: inline-flex;
 /*  flex-direction: column; /* Stack the icon and text vertically */
   flex-wrap: wrap;
@@ -545,9 +709,18 @@ nav.vertical-nav ul {
   transform: translateY(-4px);
   transition: transform 0.5s ease;
   border: solid 2px  #366ad1 ; 
+.portfolio-nav a:hover{ 
+  color: #3665c2;
+  background:#fff;
+  box-shadow: -3px -3px 5px rgba(255, 255, 255, 1), 5px 5px 5px #a0bffd ;
+  transform: translateY(-4px);
+  transition: transform 0.5s ease;
+  border: solid 2px  #366ad1 ; 
 }
 
 .portfolio-nav i {
+  font-size: 19px;
+  margin-right: 0.5rem;
   font-size: 19px;
   margin-right: 0.5rem;
 }
@@ -558,12 +731,24 @@ nav.vertical-nav ul {
   overflow-y: auto; /* Makes this area scrollable */
   width: 100%;
   margin: 0;
+  display: block;
+  flex-grow: 1;
+  overflow-y: auto; /* Makes this area scrollable */
+  width: 100%;
+  margin: 0;
 }
 
 .content-section {
   display: none; /* Hide all sections by default */
+  display: none; /* Hide all sections by default */
 }
 
+.content-section h2{
+  text-align: center;
+  background-color: #e1eaff;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 .content-section h2{
   text-align: center;
   background-color: #e1eaff;
@@ -574,9 +759,17 @@ nav.vertical-nav ul {
 .content-section.active {
   display: block; /* Only display the active section */
   align-content: center;
+  display: block; /* Only display the active section */
+  align-content: center;
 }
 
 .video {
+  width: 100%; /* Adjust based on your design preference */
+  margin: 5px 5px; /* Adds space above and below, centers horizontally */
+  overflow: hidden; /* Prevents content from spilling out */
+  position: relative;
+  padding-top: 56.25%; /* Aspect ratio for 16:9 videos */
+  box-sizing:content-box; /* Ensures padding is included in the width */
   width: 100%; /* Adjust based on your design preference */
   margin: 5px 5px; /* Adds space above and below, centers horizontally */
   overflow: hidden; /* Prevents content from spilling out */
@@ -593,13 +786,26 @@ nav.vertical-nav ul {
   height: 92%;
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 92%;
+  height: 92%;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 .video:hover {
   transform: translateY(-5px);
   transition: transform 0.5s ease;
+  transform: translateY(-5px);
+  transition: transform 0.5s ease;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust this as needed */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -609,8 +815,14 @@ nav.vertical-nav ul {
 .video-card{
   margin: 5px; 
   width: 27rem;
+.video-card{
+  margin: 5px; 
+  width: 27rem;
 }
 
+.video.card:hover {
+transform: translateY(-5px);
+transition: transform 0.5s ease;
 .video.card:hover {
 transform: translateY(-5px);
 transition: transform 0.5s ease;
@@ -618,9 +830,12 @@ transition: transform 0.5s ease;
 
 .video-card.card-body {
   text-align: center;
+  text-align: center;
 }
 
 .card {
+  margin: 2vh 0; 
+  width: 17rem;
   margin: 2vh 0; 
   width: 17rem;
 }
@@ -628,9 +843,15 @@ transition: transform 0.5s ease;
 .card:hover {
 transform: translateY(-5px);
 transition: transform 0.5s ease;
+transform: translateY(-5px);
+transition: transform 0.5s ease;
 }
 
 .card-body {
+  text-align: center;
+  color: #000;
+  font-size: 0.9em;
+  font-weight: 500;
   text-align: center;
   color: #000;
   font-size: 0.9em;
@@ -645,8 +866,18 @@ transition: transform 0.5s ease;
   border: none;
   border-bottom: solid #366ad1 2px;
   margin-bottom: 5px;
+  color: #366ad1;
+  background-color: transparent;
+  padding: 7px 7px;
+  text-decoration: none;
+  border: none;
+  border-bottom: solid #366ad1 2px;
+  margin-bottom: 5px;
 }
 
+.btn-portfolio:hover{
+  color: #fff;
+  background-color: #3761b6;
 .btn-portfolio:hover{
   color: #fff;
   background-color: #3761b6;
@@ -656,7 +887,15 @@ transition: transform 0.5s ease;
 /*==============================================
      Branding Portfolio  CSS
 ================================================*/
+ 
+/*==============================================
+     Branding Portfolio  CSS
+================================================*/
 .branding-container {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  text-align: left;
   display: flex;
   flex-direction: column;
   width:100%;
@@ -669,17 +908,28 @@ transition: transform 0.5s ease;
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
   margin: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
+  margin: 0;
 }
 
 .branding-content {
+  padding: 1px 0;
   padding: 1px 0;
 }
 
 .tab-content {
   align-items: center;
+  align-items: center;
 }
 
 .branding-menu ul {
+  justify-content: center;
+  align-content: center;
+  padding: 17px 0px;
+  background: #3761b6 !important; /* Adjusted color for a softer look */
   justify-content: center;
   align-content: center;
   padding: 17px 0px;
@@ -699,14 +949,31 @@ transition: transform 0.5s ease;
   transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
   margin: 0.7rem;
   margin-top: 0.1rem;
+  text-decoration: none;
+  padding: 11px 12px;
+  color: #333; /* Darker for better readability */
+  background: #fff; /* Softer background */
+  box-shadow: 2px 2px 5px #e0e0e0; /* Softer shadow */
+  border: 1px solid #ddd; /* Lighter border */
+  border-radius: 5px;
+  font-size: 0.9em; /* Slightly larger */
+  font-weight: 400; /* Lighter weight for a modern look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smoother transition */
+  margin: 0.7rem;
+  margin-top: 0.1rem;
 }
 
 .branding-menu li {
   margin: 0;
   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .branding-menu a.active {
+  color: #fff !important;
+  background: #3761b6 !important; /* Adjusted color for a softer look */
+  box-shadow: 3px 3px 6px #fff;
   color: #fff !important;
   background: #3761b6 !important; /* Adjusted color for a softer look */
   box-shadow: 3px 3px 6px #fff;
@@ -716,9 +983,17 @@ transition: transform 0.5s ease;
   color: #fff;
   background: #5a7dbc; /* Adjusted color for a softer look */
   box-shadow: 3px 3px 6px #fff;
+  color: #fff;
+  background: #5a7dbc; /* Adjusted color for a softer look */
+  box-shadow: 3px 3px 6px #fff;
 }
 
 .tab-content img {
+  max-width: 63%; /* Ensure responsiveness */
+  max-height: 50vh; /* Maintain aspect ratio */
+  margin: 0.75rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
   max-width: 63%; /* Ensure responsiveness */
   max-height: 50vh; /* Maintain aspect ratio */
   margin: 0.75rem;
@@ -731,9 +1006,18 @@ transition: transform 0.5s ease;
   flex-direction: row;
   padding: 10px;
   align-items: center;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
 }
 
 .portfolio-branding img {
+  width: 40%; /* Ensure responsiveness */
+  max-height: 40vh; /* Maintain aspect ratio */
+  margin: 1rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
   width: 40%; /* Ensure responsiveness */
   max-height: 40vh; /* Maintain aspect ratio */
   margin: 1rem;
@@ -746,6 +1030,10 @@ transition: transform 0.5s ease;
   padding-left: 1rem;
   align-items: center; /* Center items horizontally in the flex container */
   justify-content: center; /* Center items vertically in the flex container */
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  align-items: center; /* Center items horizontally in the flex container */
+  justify-content: center; /* Center items vertically in the flex container */
 }
 
 .marketing-branding img {
@@ -754,9 +1042,19 @@ transition: transform 0.5s ease;
   margin: 0.75rem;
   box-shadow: 1px 1px 3px #f1f1f1;
   border-radius: 4px;
+  max-width: 40%; /* Ensure responsiveness */
+  max-height: 40vh; /* Maintain aspect ratio */
+  margin: 0.75rem;
+  box-shadow: 1px 1px 3px #f1f1f1;
+  border-radius: 4px;
 }
 
 .branding-box {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
   overflow-x: auto;
   display: flex;
   flex-direction: row;
@@ -771,22 +1069,62 @@ transition: transform 0.5s ease;
   margin-top: 19px;
   text-transform: uppercase;
   padding-left: 1rem;
+  font-weight: 500; /* Adjusted for emphasis */
+  color: #000000; /* Softened color */
+  font-size: larger;
+  margin-top: 19px;
+  text-transform: uppercase;
+  padding-left: 1rem;
 }
 
 .branding-box img {
   max-width: 30%; /* Ensure responsiveness */
   max-height: 30vh; /* Maintain aspect ratio */
   margin: 0.75rem; /* Increased spacing */
+  max-width: 30%; /* Ensure responsiveness */
+  max-height: 30vh; /* Maintain aspect ratio */
+  margin: 0.75rem; /* Increased spacing */
 }
+
 
 
 .logo-branding {
   display: flex;   
   flex-wrap: wrap; 
   justify-content: center;
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 .logo-branding img {
+  margin: 0.5rem; /* Increased spacing */
+  padding-bottom: 0.5rem;
+  width: fit-content;
+  height: fit-content;
+  min-width: 15rem;
+  justify-content: center; /* Center items vertically in the flex container */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container-portfolio-branding {
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
+}
+
+.portfolio-branding {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px #b2c9f8;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 1rem;
+  max-width: 40%; /* Ensure responsiveness */
+  max-height: 63vh; /* Maintain aspect ratio */
+  justify-content: center;
+  }
   margin: 0.5rem; /* Increased spacing */
   padding-bottom: 0.5rem;
   width: fit-content;
@@ -837,11 +1175,46 @@ transition: transform 0.5s ease;
   display: flex;   
   flex-wrap: wrap; 
   justify-content: center;
+.portfolio-branding img {
+  width: fit-content;
+  height: fit-content;
+}
+
+.portfolio-branding a {
+  text-decoration: none;
+  padding: 7px 10px;
+  font-size: 0.9em;
+  font-weight: 400; 
+  transition: background-color 0.3s ease, color 0.3s ease; 
+  color: #366ad1; 
+  background: #fff; 
+  box-shadow: 2px 2px 5px #e0e0e0;
+  border: 1px solid #366ad1;
+  border-radius: 5px;
+}
+
+.marketing-branding {
+  display: flex;   
+  flex-wrap: wrap; 
+  justify-content: center;
 }
 
 /* Modal CSS */
 /* The Modal (background) */
+/* The Modal (background) */
 .modal {
+  position: fixed; /* Use fixed positioning */
+  padding: 3rem; /* Location of the box */
+  display: none; /* Hidden by default */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Cover the full viewport width */
+  height: 100vh; /* Cover the full viewport height */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  vertical-align: middle;
+  z-index: 1005; /* Ensure it's above other content */
+  background-color: rgba(0,0,0,0.8); /* Semi-transparent background */
   position: fixed; /* Use fixed positioning */
   padding: 3rem; /* Location of the box */
   display: none; /* Hidden by default */
@@ -857,7 +1230,13 @@ transition: transform 0.5s ease;
 }
 
 /* Modal Content (Image) */
+/* Modal Content (Image) */
 .modal-content {
+  max-width: 92%; /* Maximum width is the container's width */
+  max-height: 92vh; /* Do not exceed the viewport's height */
+  object-fit: contain; /* Preserve aspect ratio while fitting in the container */
+  justify-content: center; /* Center horizontally */
+  vertical-align: middle;
   max-width: 92%; /* Maximum width is the container's width */
   max-height: 92vh; /* Do not exceed the viewport's height */
   object-fit: contain; /* Preserve aspect ratio while fitting in the container */
@@ -866,7 +1245,16 @@ transition: transform 0.5s ease;
 }
 
 /* Caption of Modal Image */
+/* Caption of Modal Image */
 #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
   margin: auto;
   display: block;
   width: 80%;
@@ -878,7 +1266,15 @@ transition: transform 0.5s ease;
 }
 
 /* The Close Button */
+/* The Close Button */
 .close {
+  position: absolute;
+  top: 12px;
+  right: 40px;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight:500;
+  transition: 0.5s;
   position: absolute;
   top: 12px;
   right: 40px;
@@ -890,6 +1286,9 @@ transition: transform 0.5s ease;
 
 .close:hover,
 .close:focus {
+  color: #e0e0e0;
+  text-decoration: none;
+  cursor: pointer;
   color: #e0e0e0;
   text-decoration: none;
   cursor: pointer;
